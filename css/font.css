@@ -1,0 +1,109 @@
+html{
+    font-family: "Noto Sans KR", sans-serif;
+}
+select{
+    font-family: "Noto Sans KR", sans-serif;
+}
+.bigft{
+    font-size:60px
+}
+.midft{
+    font-size:30px
+}
+.smallft{
+    font-size:25px;
+}
+
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    .bigft{
+        font-size:65px
+    }
+    .midft{
+        font-size:45px
+    }
+    .smallft{
+        font-size:25px;
+    }
+    
+
+}
+
+
+.subbigft{
+    font-weight: 500;
+    font-size:50px
+}
+.submidft{
+    font-size: 30px;
+    font-weight: 500;
+}
+.subsmallft{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width:767px) {
+    .bigft{
+        font-size:35px
+    }
+    .midft{
+        font-size:30px
+    }
+    .smallft{
+        font-size:20px;
+    } 
+
+    .subbigft{
+        font-weight: 600;
+        font-size:35px
+    }
+    .submidft{
+        font-size: 25px;
+    }
+    .subsmallft{
+        font-size: 20px;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    .subbigft{
+        font-weight: 600;
+        font-size:40px
+    }
+    .submidft{
+        font-size: 25px;
+    }
+    .subsmallft{
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+input{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+textarea{
+    font-family: "Noto Sans KR", sans-serif;
+}
+

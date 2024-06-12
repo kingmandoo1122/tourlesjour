@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>창업 설명회 신청</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/franchise_popup_date.css">
+    <link rel="stylesheet" href="./css/franchise_popup_franchise.css">
+</head>
+<body>
+    <div class="submit_franchise">
+        <h3>창업 설명회 신청</h3>
+        <form action="#">
+            <div class="one">
+                <div>
+                    <label for="name_2">이름</label><br>
+                    <input maxlength="4" id="name_2" type="text" placeholder="이름을 입력해주세요." required>
+                </div>
+                <div class="phone_2">
+                    <label for="phone_2">연락처</label><br>
+                    <input type="text" required placeholder="010" maxlength="3">-
+                    <input type="text" required placeholder="1234" maxlength="4">-
+                    <input type="text" required placeholder="5678" maxlength="4">
+                </div>
+            </div>
+            <div class="two">
+                <div class="address">
+                    <label for="address">주소</label><br>
+                    <input id="address" type="text" required placeholder="주소를 입력해주세요.">
+                </div>
+                <div>
+                    <label for="place">창업 희망지역</label><br>
+                    <select name="#" id="place_parent">
+                        <option value="#">선택</option>
+                        <option class="pal0" value="#">경기도</option>
+                        <option class="pal1" value="#">강원도</option>
+                        <option class="pal2" value="#">서울특별시</option>
+                    </select>
+                    <select name="#" id="place_child">
+                        <option value="#">선택</option>
+                    </select>
+                </div>
+            </div>
+            <div class="three">
+                <div class="py">
+                    <label for="py">창업 희망평수</label><br>
+                    <select name="" id="py">
+                        <option value="#">선택</option>
+                        <option value="#">20~25평</option>
+                        <option value="#">25~30평</option>
+                        <option value="#">30~35평</option>
+                        <option value="#">35~40평</option>
+                        <option value="#">40평 이상</option>
+                    </select>
+                </div>
+                <div class="price">
+                    <label for="price">투자금액</label><br>
+                    <select id="price">
+                        <option value="#">선택</option>
+                        <option value="#">2억~2억5천</option>
+                        <option value="#">2억5천~3억</option>
+                        <option value="#">3억~3억5천</option>
+                        <option value="#">3억5천~4억</option>
+                        <option value="#">4억 이상</option>
+                    </select>
+                </div>
+            </div>
+            <div class="four">
+                <div class="person">
+                    <label for="person">참석 인원</label><br>
+                    <input id="person" type="text"maxlength="3" required placeholder="참석 인원을 입력해주세요.">
+                </div>
+                <div class="date">
+                    <label for="date">참석 날짜</label><br>
+                    <select id="date">
+                        <option value="#">선택</option>
+                        <option value="#">2024-05-14</option>
+                        <option value="#">2024-05-28</option>
+                        <option value="#">2024-06-11</option>
+                        <option value="#">2024-06-25</option>
+                    </select>
+                </div>
+            </div>
+            <div class="five">
+                <h3>개인정보 수집 및 이용 동의 (필수)</h3>
+                <div class="box">
+                    <ol>
+                        <li>
+                            <p>1.개인정보 수집 항목<br>
+                            (필수) 성명, 전화번호, 주소, 참석날짜</p>
+                        </li>
+                        <li>
+                            <p>2. 이용목적<br>
+                            뚜레쥬르 가맹점 개설 상담</p>
+                        </li>
+                        <li>
+                            <p>3. 보유기간<br>
+                            가맹점 창업설명회 참석날짜 익일 즉시 파기</p>
+                        </li>
+                    </ol>
+                    <p>※ 위의 개인정보 수집 및 이용동의에 거부할 수 있으며, 거부시 창업설명회 참석예약이 제한됨을 알려드립니다.</p>
+                </div>
+                <input name="agree" id="agree_2" type="radio"> <label for="agree_2">동의합니다</label>
+                <input name="agree" id="disagree_2" type="radio"> <label for="disagree_2">동의하지 않습니다</label>
+            </div>
+            <div class="six">
+                <h3>개인정보 수집 및 이용 동의 (선택)</h3>
+                <div class="box">
+                    <ol>
+                        <li>
+                            <p>1.개인정보 수집 항목<br>
+                            (선택) 창업 희망지역, 창업희망평수, 참석인원, 투자금액</p>
+                        </li>
+                        <li>
+                            <p>2. 이용목적<br>
+                            뚜레쥬르 가맹점 개설 상담</p>
+                        </li>
+                        <li>
+                            <p>3. 보유기간<br>
+                            가맹점 창업설명회 참석날짜 익일 즉시 파기</p>
+                        </li>
+                    </ol>
+                    <p>※ 위의 개인정보 수집 및 이용동의에 거부할 수 있으며, 거부시에도 창업설명회 참석예약이 가능합니다.</p>
+                </div>
+                <input name="agree2" id="agree_3" type="radio"> <label for="agree_3">동의합니다</label>
+                <input name="agree2" id="disagree_3" type="radio"> <label for="disagree_3">동의하지 않습니다</label>
+            </div>
+            <div class="seven">
+                <input class="btn" value="제출" type="submit">
+                <input class="btn" value="초기화" type="reset">
+            </div>
+    
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+.submit_franchise{
+    box-sizing: border-box;
+    padding: 0 50px;
+    font-size: 20px;
+    padding-top:25px;
+    margin: 0 auto;
+    width: 1200px;
+    background: #ffffff;
+    position: fixed;
+    left:calc(50% - 600px);
+    overflow: auto;
+    z-index: 10002;
+    height:95vh;
+    top: calc((50% - 47.5vh));
+    padding-bottom:50px;
+}
+
+.submit_franchise>h3{
+    text-align: center;
+    font-size: 40px;
+    color:#005C35;
+    font-weight: 600;
+}
+
+.close_2{
+    z-index: 50005;
+    cursor: pointer;
+    top: 6%;
+    right: 21%;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: url(../img/franchise/close_btn.svg) no-repeat 50% 50% /contain;
+    position: fixed;
+}
+.submit_franchise label{
+    font-weight: 500;
+}
+
+input[id="name_2"]{
+    font-size:16px;
+    width: 300px;
+    border: none;
+    height: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8)
+    
+}
+.one{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top:30px;
+}
+
+.one>div{
+    flex:1
+}
+.one>div.phone_2>input{
+    width: 150px;
+    font-size:16px;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.8);
+    height: 35px;
+}
+
+.two{
+    margin-top:30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.two>div{
+    flex:1
+}
+
+input[id="address"]{
+    font-size:16px;
+    width: 300px;
+    border: none;
+    height: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8)
+}
+
+.submit_franchise select{
+    width: 200px;
+    height: 36px;
+    font-size:16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8)
+}
+
+select[id="place_parent"]{
+    margin-right:71px;
+}
+
+.three{
+    display: flex;
+    width: 100%;
+    margin-top:30px;
+    justify-content: space-between;
+}
+
+.price{
+    width: 543px;
+}
+select[id="price"]{
+    width: 320px;
+}
+div.price{
+    position:relative;
+}
+div.price:after{
+    bottom: 0%;
+    right: 23%;
+    position: absolute;
+    font-size: 0.8rem;
+    content: '(점포임대 포함)';
+}
+
+.four{
+    display: flex;
+    margin-top:30px;
+    justify-content: space-between;
+}
+
+input[id="person"]{
+    font-size:16px;
+    width: 300px;
+    border: none;
+    height: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8)
+}
+
+div.date{
+    width: 543px;
+}
+
+.five{
+    margin-top:30px;
+}
+.five>h3{
+    font-weight: 600;
+}
+
+.box{
+    font-size:16px;
+    color:rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding:10px;
+    height: 150px;
+    border:1px solid black;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+.box li{
+    margin-bottom:15px;
+}
+.six{
+    margin-top:30px;
+}
+.six>h3{
+    font-weight: 600;
+}
+
+.box~label{
+    margin-right:10px;
+}
+
+.seven{
+    margin-top:50px;
+    justify-content: center;
+    display: flex;
+}
+
+.submit_franchise.show{
+    display: block;
+}
