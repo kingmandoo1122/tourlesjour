@@ -1,0 +1,12 @@
+파일 바꾸고
+초기에- git init 
+git config --global user.name "kingmandoo"
+
+git config --global user.email "mjnwang@naver.com"
+
+git status(확인하는거)
+
+git add .
+git commit -m "텍스트 입력하기"
+git remote add origin https:~~~주소(한번만)
+git push origin master
