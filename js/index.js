@@ -178,7 +178,26 @@ window.onload = function(){
 
         
 
-        if (matchMedia("(min-width: 768px)").matches){
+
+
+
+
+
+
+        
+        if (matchMedia("(min-width: 768px) and (max-width:1023px)").matches){
+            console.log(scroll)
+            // 상단네비게이션
+            if(scroll > 849){
+                navigation_sec.classList.remove("top")
+            }
+            else{
+                navigation_sec.classList.add("top")
+            }
+        }
+
+
+        if (matchMedia("(min-width:1024px)").matches){
 
             // 상단네비게이션
             if(scroll > 1093){
@@ -188,6 +207,24 @@ window.onload = function(){
                 navigation_sec.classList.add("top")
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     })
 
    

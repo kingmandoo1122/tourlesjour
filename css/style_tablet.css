@@ -49,17 +49,29 @@
     height: 100vh
 }
 
+
+
+
+
+
+/* 네비게이션 태블릿 */
+
 .navigation_sec>.inner_contents{
     padding-top: 15px;
     display: flex;
 }
 .navigation_sec.top{
     color:white;
+    background:rgba(255, 255, 255, 0);
+}
+
+.navigation_sec.hide{
+    height: 0px;
 }
 .navigation_sec{
-    background:rgba(255, 255, 255, 0);
-    color:#000;
-    height: 73px;
+    background: rgba(0, 73, 43, 0.9);
+    color:#fff;
+    height: 100px;
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -86,15 +98,28 @@
     opacity: 1;    
 }
 
+.navigation_sec:hover .logo>a{
+    background: url(../img/logo_white.png) no-repeat 50% 50% / contain;
+}
+
 nav{
     margin-left:15px;
     width: 100%;
 }
+
+.navigation_sec.top .logo>a{
+    
+    background: url(../img/logo_white.png) no-repeat 50% 50% / contain;
+}
 .logo>a{
     display: block;
+    transition: all 0.5s ease 0s;
     padding-top:23px;
     background: url(../img/logo_white.png) no-repeat 50% 50% / contain;
 }
+
+
+
 .logo {
     padding-top: 24px;
     width: 198px;
@@ -134,6 +159,20 @@ nav>ul>li>ul{
 nav>ul>li>ul>li{
     margin:8px 0;
 }
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
 
 .banner_video{
     width: 100%;

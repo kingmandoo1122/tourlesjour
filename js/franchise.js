@@ -161,7 +161,7 @@ let roundnum =0
 
 
     
-        if (matchMedia("(min-width: 768px)").matches){
+        if (matchMedia("(min-width: 1024px)").matches){
 
             if (distance < 0){
                 elv.classList.remove("fixed")
@@ -191,6 +191,7 @@ let roundnum =0
                 
             }
         }
+
 
 
 

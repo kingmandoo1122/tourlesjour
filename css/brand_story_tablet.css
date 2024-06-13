@@ -1,6 +1,44 @@
 @media (min-width:768px) and (max-width:1023px) {
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .navigation_sec.top{
+        color:black;
+        background: #f4f4f4ba;;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+    }
+    .navigation_sec.top .logo>a{
+        background: url(../img/logo_black.png) no-repeat 50% 50% /contain;
+    }
+
+    .navigation_sec.top:hover .logo>a{
+        background: url(../img/logo_white.png) no-repeat 50% 50% /contain;
+    }
+    .navigation_sec.top:hover{
+        color:white;
+    }
+    .navigation_sec.top:hover {
+        background: rgba(0, 73, 43, 0.95);
+        height: 330px;
+        color: #fff;
+    }
+
+
+
     .sub_brand_story .inner_contents{
         padding-top:150px;
         display: flex;
