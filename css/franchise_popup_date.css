@@ -22,8 +22,7 @@
 .submit_date>h3{
     text-align: center;
     font-size: 40px;
-    color:#005C35;
-    font-weight: 600;
+    font-weight: 500;
 }
 .close{
     z-index: 50005;

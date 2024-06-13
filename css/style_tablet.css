@@ -93,7 +93,15 @@ nav{
 .logo>a{
     display: block;
     padding-top:23px;
+    background: url(../img/logo_white.png) no-repeat 50% 50% / contain;
 }
+.logo {
+    padding-top: 24px;
+    width: 198px;
+    height: 11px;
+    align-self: flex-start;
+}
+
 nav>ul{
     text-align: center;
     font-size:18px;

@@ -160,48 +160,37 @@ let roundnum =0
 
 
 
+    
+        if (matchMedia("(min-width: 768px)").matches){
 
-
-        if (distance < 0){
-            elv.classList.remove("fixed")
-            elv.classList.remove("bottom")
-            for(let i=0;i<elv_li.length;i++){
-                elv_li[i].style.opacity = `0`
-                elv_li[i].classList.remove("on")
+            if (distance < 0){
+                elv.classList.remove("fixed")
+                elv.classList.remove("bottom")
+                for(let i=0;i<elv_li.length;i++){
+                    elv_li[i].style.opacity = `0`
+                    elv_li[i].classList.remove("on")
+                }
+            }
+        
+        
+            if (distance > 0 && distance <= ani_length) {
+                elv.classList.add("fixed")
+                elv.classList.remove("bottom")
+                elv_li[ani_idx].style.opacity = `${opacityround(ani_iper)}`
+                elv_li[ani_idx].classList.add("on")
+        
+    
+            }
+            if (distance > ani_length){
+                elv.classList.add("bottom")
+                elv.classList.remove("fixed")
+                for(let i=0;i<elv_li.length;i++){
+                    elv_li[i].style.opacity = `1`
+                    elv_li[i].classList.remove("on")
+                }
+                
             }
         }
-    
-    
-        if (distance > 0 && distance <= ani_length) {
-            elv.classList.add("fixed")
-            elv.classList.remove("bottom")
-            elv_li[ani_idx].style.opacity = `${opacityround(ani_iper)}`
-            elv_li[ani_idx].classList.add("on")
-    
-
-        }
-        if (distance > ani_length){
-            elv.classList.add("bottom")
-            elv.classList.remove("fixed")
-            for(let i=0;i<elv_li.length;i++){
-                elv_li[i].style.opacity = `1`
-                elv_li[i].classList.remove("on")
-            }
-            
-        }
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

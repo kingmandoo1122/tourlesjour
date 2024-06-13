@@ -459,19 +459,34 @@ nav>ul>li>ul>li{
 }
 
 .card_list img:hover{
-    transform: scale(110%);
+    transform: scale(120%);
+    position: relative;
+    z-index: 100;
 }
+
+
 .card_list img{
+    position: relative;
     width: 300px;
     object-fit: contain;
-    transition: all 0.2s ease 0s;
+    transition: all 0.3s ease-out 0s;
 }
+
+
+
+
 .card_ul1{
+    position: relative;
+    z-index: 0;
     animation: cardanimation 33s linear 0s infinite;
+    width: 49.2%;
 }
 
 .card_ul2{
-    animation: cardanimation2 33s linear 0s infinite
+    position: relative;
+    z-index: 0;
+    animation: cardanimation2 33s linear 0s infinite;
+    width: 49.2%;
 }
 .discount_div{
     display: flex;
@@ -482,16 +497,16 @@ nav>ul>li>ul>li{
 
 @keyframes cardanimation {
         
-    0%{transform: translateY(-37.3%)}
-    100%{transform: translateY(29.5%);
-    }
+    0%{transform: translateY(-37.3%);}
+    100%{transform: translateY(29.5%);}
 
 }
 
 @keyframes cardanimation2 {
     0%{transform: translateY(37.6%);}
-    100%{transform:translateY(-17.9%)}
+    100%{transform:translateY(-17.9%);}
 }
+
 
 .event_sec{
     position: relative;

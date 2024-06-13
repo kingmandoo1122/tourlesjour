@@ -9,7 +9,10 @@ window.onload = function(){
     let news_list = document.querySelectorAll(".news_div ul>li")
     let count = 0
     let card_list = document.querySelectorAll(".card_list li>a")
-
+    let card_ul1_img = document.querySelectorAll(".card_ul1>li>a>img")
+    let card_ul2_img= document.querySelectorAll(".card_ul2>li>a>img")
+    let card_ul1 = document.querySelector(".card_ul1")
+    let card_ul2 = document.querySelector(".card_ul2")
 
 
     // 카드 리스트들의 a태그 이벤트 없애기
@@ -18,7 +21,48 @@ window.onload = function(){
             e.preventDefault()
         })
     }
+
     // 
+
+    for(let i=0;i<card_ul1_img.length;i++){
+        card_ul1_img[i].addEventListener("mouseenter",function(){
+                card_ul1.style.zIndex = 10
+                console.log("ggg")
+        })    
+        }
+    
+
+    for(let i=0;i<card_ul1_img.length;i++){
+        card_ul1_img[i].addEventListener("mouseleave",function(){
+            card_ul1.style.zIndex = 1
+
+        })
+    }
+
+    for(let i=0;i<card_ul2_img.length;i++){
+        card_ul2_img[i].addEventListener("mouseenter",function(){
+            card_ul2.style.zIndex = 10
+            
+        })    
+        }
+    
+
+    for(let i=0;i<card_ul2_img.length;i++){
+        card_ul2_img[i].addEventListener("mouseleave",function(){
+                card_ul2.style.zIndex = 1
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
     // 빵 메뉴바 탭메뉴
