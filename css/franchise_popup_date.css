@@ -1,3 +1,6 @@
+@media (min-width :1024px){
+
+
 .submit_date{
     box-sizing: border-box;
     padding: 0 50px;
@@ -6,12 +9,8 @@
     margin: 0 auto;
     width: 1200px;
     background: #ffffff;
-    position: fixed;
-    left:calc(50% - 600px);
     overflow: auto;
     z-index: 10002;
-    height:95vh;
-    top: calc((50% - 47.5vh));
     padding-bottom:50px;
 }
 
@@ -181,4 +180,413 @@ input[type="submit"]{
 .modal.show{
     display: block;
 }
+.btn {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 280px;
+    padding: 8px 0;
+}
 
+
+}
+
+
+
+
+/* 태블릿 */
+@media (min-width:768px) and (max-width:1023px) {
+
+
+
+    .submit_date{
+        box-sizing: border-box;
+        padding: 0 50px;
+        font-size: 18px;
+        padding-top:25px;
+        margin: 0 auto;
+        width: 100%;
+        background: #ffffff;
+        overflow: hidden;
+        padding-bottom:50px;
+    }
+    
+    .submit_date.show{
+        display: block;
+    }
+    
+    .submit_date>h3{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .close{
+        z-index: 50005;
+        cursor: pointer;
+        top: 6%;
+        right: 21%;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background: url(../img/franchise/close_btn.svg) no-repeat 50% 50% /contain;
+        position: fixed;
+    }
+    
+    .first{
+        padding-top:30px;
+    }
+    .submit_date label{
+        font-weight: 500;
+    }
+    
+    label[for="name"]{
+        margin-right:20px
+    }
+    
+    label[for="private"]{
+        font-size:15px;
+        color:rgba(0, 0, 0, 0.8)
+    }
+    
+    input[id="name"]{
+        font-size:16px;
+        width: 42%;
+        border: none;
+        height: 35px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8)
+        
+    }
+    
+    
+    .submit_date .second{
+        margin-top:30px;
+        display: flex;
+    }
+    
+    .second>div.phone>input{
+        font-size:16px;
+        width: 28.5%;
+        border-bottom:  1px solid rgba(0, 0, 0, 0.8);
+        height: 35px;
+    }
+    
+    .second>div.email{
+        margin-left:40px;
+    }
+    
+    .second>div.email>input{
+        font-size:16px;
+        width: 400px;
+        border-bottom:  1px solid rgba(0, 0, 0, 0.8);
+        height: 35px;
+    }
+    
+    .third{
+        margin-top: 30px;
+    }
+    
+    .third>input{
+        font-size:16px;
+        height: 37px;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+    
+    .fourth{
+        margin-top:50px
+    }
+    textarea[id="textarea"]{
+        width: 100%;
+        height: 300px;
+        font-size: 16px;
+    }
+    
+    .fifth{
+        margin-top:50px;
+    }
+    
+    .fifth>p{
+        font-weight: 600;
+        margin-bottom:30px;
+    }
+    
+    .fifth>ol>li>p:nth-of-type(1){
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    
+    .fifth>ol>li{
+        margin-bottom: 20px;
+    }
+    
+    .fifth table{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .fifth table tr:nth-of-type(1){
+        border-top:1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .fifth table tr:nth-of-type(1)>th{
+        padding:10px 0;
+    }
+    
+    .fifth table td{
+        padding:40px 0;
+        border-bottom:1px solid black;
+    }
+    
+    .warning{
+        margin-top:5px;
+        font-size: 16px;
+        color:rgba(0, 0, 0, 0.7)
+    }
+    
+    .sixth{
+        margin-top: 50px;
+        justify-content: center;
+        display: flex;
+    }
+    input[class="btn"]{
+        width: 240px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover{
+        background: white;
+        color:#000;
+        border:1px solid #000;
+    }
+    
+    
+    input[type="submit"]{
+        margin-right:30px;
+        background: #000;
+        color:#fff;
+        transition: all 0.3s ease 0s;
+        border:1px solid #fff;
+    }
+
+
+    .btn {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        width: 280px;
+        padding: 8px 0;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 모바일 */
+@media (max-width:767px) {
+
+
+    .submit_date{
+        box-sizing: border-box;
+        padding: 0 25px;
+        font-size: 16px;
+        padding-top:25px;
+        margin: 0 auto;
+        width: 100%;
+        background: #ffffff;
+        overflow: hidden;
+        padding-bottom:50px;
+    }
+    
+    .submit_date.show{
+        display: block;
+    }
+    
+    .submit_date>h3{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .first{
+        padding-top:30px;
+    }
+
+    .submit_date label{
+        font-weight: 500;
+    }
+    
+    label[for="name"]{
+        margin-right:20px
+    }
+    
+    label[for="private"]{
+        font-size:15px;
+        color:rgba(0, 0, 0, 0.8)
+    }
+    
+    input[id="name"]{
+        font-size:13px;
+        width: 42%;
+        border: none;
+        height: 35px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8)
+        
+    }
+    
+    .submit_date .second{
+        margin-top:30px;
+        display: flex;
+    }
+
+    .second>div{
+        flex:1
+    }
+    
+    .second>div.phone>input{
+        font-size:13px;
+        width: 28.5%;
+        border-bottom:  1px solid rgba(0, 0, 0, 0.8);
+        height: 35px;
+    }
+    
+    .second>div.email{
+        margin-left:10px;
+    }
+    
+    .second>div.email>input{
+        font-size:13px;
+        width: 100%;
+        border-bottom:  1px solid rgba(0, 0, 0, 0.8);
+        height: 35px;
+    }
+    
+    .third{
+        margin-top: 30px;
+    }
+    
+    .third>input{
+        font-size:13px;
+        height: 37px;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+    
+    .fourth{
+        margin-top:50px
+    }
+    textarea[id="textarea"]{
+        width: 100%;
+        height: 300px;
+        font-size: 13px;
+    }
+    
+    .fifth{
+        margin-top:50px;
+    }
+    
+    .fifth>p{
+        font-weight: 600;
+        margin-bottom:30px;
+    }
+    
+    .fifth>ol>li>p:nth-of-type(1){
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    
+    .fifth>ol>li{
+        margin-bottom: 20px;
+    }
+    
+    .fifth table{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .fifth table tr:nth-of-type(1){
+        border-top:1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .fifth table tr:nth-of-type(1)>th{
+        padding:10px 0;
+    }
+    
+    .fifth table td{
+        font-size: 13px;;
+        padding:40px 0;
+        border-bottom:1px solid black;
+    }
+    
+    .warning{
+        margin-top:5px;
+        font-size: 13px;
+        color:rgba(0, 0, 0, 0.7)
+    }
+    
+    .sixth{
+        margin-top: 50px;
+        justify-content: center;
+        display: flex;
+    }
+    input[class="btn"]{
+        width: 240px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover{
+        background: white;
+        color:#000;
+        border:1px solid #000;
+    }
+    
+    
+    input[type="submit"]{
+        margin-right:30px;
+        background: #000;
+        color:#fff;
+        transition: all 0.3s ease 0s;
+        border:1px solid #fff;
+    }
+
+
+    .btn {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        width: 280px;
+        padding: 8px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+}
