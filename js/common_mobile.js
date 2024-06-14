@@ -1,12 +1,10 @@
 
-    if (matchMedia("(max-width: 767px)").matches) {
-
-        let open_menu_btn = document.querySelector(".open_menu_btn")
-        let nav = document.querySelector("nav")
-        let close_menu_btn = document.querySelector(".close_menu_btn")
-        let nav_ul_li = document.querySelectorAll("nav>ul>li")
-        let nav_ul_li_a = document.querySelectorAll("nav>ul>li>a")
-        let navigation_sec = document.querySelector(".navigation_sec")
+        let open_menu_btn = document.querySelector("#mobile .open_menu_btn")
+        let nav = document.querySelector("#mobile nav")
+        let close_menu_btn = document.querySelector("#mobile .close_menu_btn")
+        let nav_ul_li = document.querySelectorAll("#mobile nav>ul>li")
+        let nav_ul_li_a = document.querySelectorAll("#mobile nav>ul>li>a")
+        let navigation_sec = document.querySelector("#mobile .navigation_sec")
 
 
         // 네비게이션 바 1뎁스의 a태그 이벤트 없애기
@@ -35,7 +33,7 @@
             close_menu_btn.style.pointerEvents = `auto`
             setTimeout(function(){
                 navigation_sec.classList.add("on")
-            },400)
+            },450)
         })
     
         // 네비게이션 바 닫기버튼
@@ -47,8 +45,5 @@
             close_menu_btn.style.pointerEvents = `none`
             setTimeout(function(){
                 navigation_sec.classList.remove("on")
-            },400)
+            },450)
         })
-
-    }
-

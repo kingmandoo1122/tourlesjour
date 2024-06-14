@@ -3,6 +3,14 @@
 
 /* common */
 
+
+#mobile{
+    display: none;
+}
+
+
+
+
 .btn{
     font-size:20px;
     display: flex;
@@ -519,6 +527,7 @@ nav>ul>li>ul>li{
     background: url("../img/event_bg.png") no-repeat 50% 50% / cover;
     height: 100%;
     width: 100%;
+    background-attachment: fixed;
 }
 .event_div1{
     text-align: right;
