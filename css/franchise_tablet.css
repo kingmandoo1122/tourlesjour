@@ -42,7 +42,7 @@
     .sub_date>.inner_contents{
         display: flex;
         justify-content: space-between;
-        padding-top:150px;
+        padding-top:130px;
         padding-bottom: 150px;
 
     }

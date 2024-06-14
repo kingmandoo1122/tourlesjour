@@ -3,7 +3,7 @@
 /* 모바일 */
 
 
-#pc{
+header#pc{
     display: none;
 }
 
@@ -262,7 +262,7 @@ justify-content: flex-start;
     position: relative;
     margin-top: 80px;
     overflow: hidden;
-    padding-bottom:85px;
+    padding-bottom:40px;
 }
 
 .banner_sec>.inner_contents{
@@ -279,13 +279,14 @@ justify-content: flex-start;
 .brandstory_sec>.inner_contents>div>p{
     margin-top:70px;
     margin-bottom:30px;
+    font-size:19px;
 }
 .greenbg{
     bottom: -12%;
     left:0;
     position: absolute;
     width: 100%;
-    height:50%;
+    height:46%;
     background: #005C35 url(../img/longlogo.svg) no-repeat 100% 60% / 100%;
     background-attachment: fixed;
     z-index: -5;
@@ -360,14 +361,14 @@ justify-content: flex-start;
     flex: 0.8;
     width: 100%;
     object-fit: contain;
-    animation: breadmove 3s linear 0s infinite;
+    /* animation: breadmove 3s linear 0s infinite; */
     cursor: pointer;
-    max-width: 400px;
+    max-width: 350px;
 
 }
 
 .menu_sec .inner_contents{
-    height: 850px;
+    padding-top:50px;
 }
 .menu_txt img{
     transition: all 0.5s ease 0s;
@@ -385,7 +386,7 @@ justify-content: flex-start;
     width: 100%;
     z-index: 0;
     position: relative;
-    height: 630px;
+    height: 615px;
     overflow: hidden;
 }
 .menu_txt>ul>li{
@@ -443,10 +444,12 @@ justify-content: flex-start;
 }
 
 
-
+.menu_div .smallft{
+    font-size: 19px;
+}
 
 .menu_bar{
-    margin-top:60px;
+    margin-top:30px;
 }
 .menu_bar>ul{
     display: flex;
@@ -576,6 +579,7 @@ div.card_list{
     background: url("../img/event_bg.png") no-repeat 50% 50% / cover;
     height: 100%;
     width: 100%;
+    background-attachment: fixed;
 }
 .event_div1{
     text-align: left;
@@ -699,12 +703,12 @@ div.card_list{
     top:47%;
 }
 .left_arrow{
-    width: 8%;
-    left: -8%;
+    width: 5%;
+    left: -5%;
 }
 .right_arrow{
-    right: -7%;
-    width: 8%;
+    right: -5%;
+    width: 5%;
 }
 .news_station {
     height: 300px;

@@ -92,7 +92,7 @@
         opacity: 0;
         transition: all 0.5s ease 0s;
         z-index: 1;
-    
+        display: none;
     }
     
     
@@ -106,12 +106,13 @@
         border:0.5px solid rgba(68, 68, 68, 0.14);
         height: 110%;
          overflow: hidden;
+         justify-content: space-between
     }
     
     .event_div h2{
-        font-size: 18px;
-        margin-top: 11px;
-        margin-bottom: 20px;
+        font-size: 15px;
+        /* margin-top: 11px;*/
+
         width: 92%;
         height: 34px;
         text-align: center;
@@ -119,14 +120,17 @@
     }
     .event_div p{
         font-size: 14px;
-        color:rgba(0, 0, 0, 0.7)
+        color:rgba(0, 0, 0, 0.7);
+        margin-bottom: 10px; 
     }
     
     
-    .event_list{
-        height: 567px;
+    .event_list {
         overflow: hidden;
         transition: all 0.7s ease-out 0s;
+        padding-bottom: 50px;
+        position: relative;
+        box-sizing: content-box;
     }
     
     
@@ -146,8 +150,16 @@
         padding:15px 0;
         color:rgba(0, 0, 0, 0.7)
     }
+    .show_more#mobile_show_btn{
+        position: absolute;
+        background: #fff;
+        left: 0;
+        bottom: 0;
+    }
     
-    
+    #pc{
+        display: none;
+    }
     
 
 

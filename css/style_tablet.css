@@ -5,7 +5,7 @@
 /* common */
 
 
-#mobile{
+header#mobile{
     display: none;
 }
 
@@ -317,15 +317,15 @@ nav>ul>li>ul>li{
     flex: 0.8;
     width: 540px;
     object-fit: contain;
-    animation: breadmove 3s linear 0s infinite;
+    /* animation: breadmove 3s linear 0s infinite; */
     cursor: pointer;
 
 }
 .menu_txt img{
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .menu_txt img:hover{
-    transform: scale(110%);    
+    transform: scale(105%);    
 
 }
 

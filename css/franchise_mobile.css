@@ -44,7 +44,7 @@ body.scroll{
 }
 
 .sub_date_div .smallft{
-    font-size:18px;
+    font-size:20px;
 }
 
 .sub_date_div br{
@@ -58,8 +58,16 @@ body.scroll{
 
 
 .sub_date_div>dl>div{
-    font-size: 15px;
+    text-align: left;
+    font-size: 20px;
     display: flex;
+}
+.sub_date_div>dl>div>dt{
+flex:1
+}
+
+.sub_date_div>dl>div>dd{
+flex:5
 }
 .sub_date_div>dl>div>dt{
     margin-right:10px;
@@ -83,10 +91,10 @@ td.greendeco{
 td.greendeco::before{
     z-index: -1;
     content: '';
-    width: 50px;
-    height: 50px;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
+    width: 44px;
+    height: 44px;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
     background: #005C35;
     border-radius: 50%;
     position: absolute;
@@ -618,7 +626,7 @@ input[type="submit"]{
 
 .sub_faq_ul dd{
     color:#393939;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 16px;
 }
 /* .sub_faq_ul dt.on+dd{
@@ -628,7 +636,6 @@ input[type="submit"]{
 
 .sub_faq_ul{
     margin-top: 100px;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -638,7 +645,9 @@ input[type="submit"]{
     overflow: hidden;
     transition: all 0.7s ease 0s;
 }
-
+.sub_faq_ul >li>dl{
+    padding-bottom:20px;
+}
 
 .sub_faq_ul >li.on dd{
     opacity: 1;

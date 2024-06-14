@@ -99,6 +99,7 @@
 .event_ul{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 .event_ul>li{
     display: flex;
@@ -202,7 +203,6 @@
 
 
 
-
 .show_more{
     cursor: pointer;
     margin-top:35px;
@@ -210,7 +210,16 @@
     border:0.5px solid rgba(68, 68, 68, 0.14);
     text-align: center;
     padding:15px 0;
-    color:rgba(0, 0, 0, 0.7)
+    color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+
+
+#mobile{
+    display: none;
 }
 
 
