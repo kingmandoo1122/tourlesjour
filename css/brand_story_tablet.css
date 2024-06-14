@@ -88,8 +88,8 @@
     .health_content .submidft{
         padding-top:20px;
         padding-bottom:20px;
-        width: 275px;
-        border-bottom: 1px solid black;;
+        width:100%;
+        border-bottom: 1px solid #005C35;
     }
     
     

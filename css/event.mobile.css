@@ -104,7 +104,7 @@
         align-items:center;
         width: 85%;
         border:0.5px solid rgba(68, 68, 68, 0.14);
-        height: 250px;
+        height: 110%;
          overflow: hidden;
     }
     
@@ -124,7 +124,7 @@
     
     
     .event_list{
-        height: 648px;
+        height: 567px;
         overflow: hidden;
         transition: all 0.7s ease-out 0s;
     }

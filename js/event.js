@@ -15,6 +15,11 @@ show_more.addEventListener("click",function(){
     show_more.style.pointerEvents =`none`
 })
 
+console.log(event_ul.offsetHeight)-902
+
+event_list.style.height = `${event_ul.offsetHeight/3 *2}px`
+
+
 let navigation_sec = document.querySelector(".navigation_sec")
 let num = 0
 let numb = 0
