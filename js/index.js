@@ -83,7 +83,7 @@ window.onload = function(){
     //뉴스 섹션 오른쪽 화살표 클릭이벤트
     right_arrow.addEventListener("click",function(e){
         count ++
-        if (count>3){count=3}
+        if (count>3){count=0}
         e.preventDefault()
         train.style.transform = `translateY(${-(100/7)*count}%)`
         for(let i=0 ; i<news_list.length ; i++){
@@ -98,7 +98,7 @@ window.onload = function(){
         if (count<0){count=3}
         e.preventDefault()
         train.style.transform = `translateY(${-(100/7)*count}%)`
-        for(let i=0 ; i<7 ; i++){
+        for(let i=0 ; i<news_list.length ; i++){
             news_list[i].classList.remove("on")
         }
         news_list[count+1].classList.add("on")
@@ -113,7 +113,7 @@ window.onload = function(){
     let down_to_up_event = document.querySelectorAll(".down_to_up_event")
     let down_to_up_event_sub = document.querySelectorAll(".down_to_up_event_sub")
     let navigation_sec = document.querySelector(".navigation_sec")
-
+    let mobile_navigation_sec = document.querySelector("#mobile .navigation_sec")
         let rect
         let scroll
         let viewheight = window.innerHeight
@@ -147,6 +147,26 @@ window.onload = function(){
             numb ++
             if(numb>2){
                 navigation_sec.classList.add("hide")
+                numb=0
+            }
+
+        }
+    })
+
+    window.addEventListener("wheel",function(e){
+        let aa = e.deltaY 
+        if (aa<0){
+            num++
+
+            if(num<2){
+                mobile_navigation_sec.classList.remove("hide")
+                num=0
+            }
+        }
+        if (aa>0){
+            numb ++
+            if(numb>2){
+                mobile_navigation_sec.classList.add("hide")
                 numb=0
             }
 

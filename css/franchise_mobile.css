@@ -56,7 +56,9 @@ body.scroll{
     transition: all 0.3s ease 0s;
 }
 
-
+.sub_date_div>dl{
+    width: 100%;;
+}
 .sub_date_div>dl>div{
     text-align: left;
     font-size: 20px;
