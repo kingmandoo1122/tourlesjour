@@ -32,7 +32,7 @@
 
 @keyframes sub_event_move {
     0%{opacity: 0;
-        transform: translateY(7%);
+        transform: translateY(50px);
     }
     100%{
         opacity: 1;
@@ -44,7 +44,8 @@
 
 
 .event{
-    animation : sub_event_move 1s ease forwards;
+    opacity: 0;
+    animation : sub_event_move 1s ease 0.1s forwards;
 }
 
 
