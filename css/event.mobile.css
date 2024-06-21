@@ -75,17 +75,15 @@
     }
     .more{
         width: 100%;
-        height: 24px;
+        height: 31px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
         top: 107%;
         left: 0;
-        border:0.5px solid rgba(68, 68, 68, 0.14);
-        border-radius: 40px;
+        border: 1px solid rgba(68, 68, 68, 0.14);
         transition: all 0.5s ease 0s;
-        z-index: 19;
         font-size: 12px;
     }
 
