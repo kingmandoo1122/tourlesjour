@@ -47,7 +47,9 @@ body.scroll{
     transform: translateY(0);}
     
 }
-
+.food_menu .inner_contents {
+    padding-bottom: 150px;
+}
 .food_menu .inner_contents>p{
     width: 100%;
     text-align: right;
@@ -58,7 +60,7 @@ body.scroll{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    position: relative;
     font-weight: 500;
     margin-bottom: 100px;
     top:0;
@@ -154,7 +156,6 @@ body.scroll{
 
 .menu_wrap{
     position: relative;
-    height: 2000px;
     font-weight: 500;
 }
 .menu_wrap>div{
@@ -210,7 +211,7 @@ body.scroll{
     margin-right: 0;
 }
 
-.info>p:last-of-type{
+.info p:last-of-type{
     width: 100%;
     font-size: 12px;
     margin-top:15px

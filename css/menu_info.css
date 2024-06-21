@@ -1,81 +1,282 @@
+@media (min-width:1024px) {
 
-
-/* 네비게이션 */
-
-
-.navigation_sec.top{
-    color:black;
-    background: #f4f4f4ba;;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    .navigation_sec.top{
+        color:black;
+        background: #f4f4f4ba;;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+    }
+    .navigation_sec.top .logo>a{
+    background: url(../img/logo_black.png) no-repeat 50% 50% /contain;
+    }
+    
+    .navigation_sec.top:hover .logo>a{
+    background: url(../img/logo_white.png) no-repeat 50% 50% /contain;
+    }
+    .navigation_sec.top:hover{
+    color:white;
+    }
+    .navigation_sec.top:hover {
+    background: rgba(0, 73, 43, 0.95);
+    height: 330px;
+    color: #fff;
+    }
+    
+    
+    
+    
+    .menu>.inner_contents{
+        padding-top:50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    .menu_img{
+        width: 45%;
+    }
+    .menu_info{
+        width: 50%;
+    
+    }
+    .name{
+        font-size:45px ;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .info{
+        font-size: 20px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .underline{
+        border-bottom:1px solid #919191;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .ingredient{
+        font-size: 13px;
+        color: rgb(0 0 0 / 51%);
+        display: flex;
+        font-weight: 500;
+        margin-bottom:40px;
+    }
+    
+    .allergy{
+        font-size: 13px;
+        color: rgb(0 0 0 / 51%);
+        font-weight: 500;
+    }
+    
+    
+    
+    
+    div.share{
+        display: flex;
+        width: 10%;
+        margin-left:auto;
+    }
+    div.share img{
+        opacity: 0.6;
+    }
+    div.share img:hover{
+        opacity: 1;
+    }
+    
 }
-.navigation_sec.top .logo>a{
-background: url(../img/logo_black.png) no-repeat 50% 50% /contain;
+
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    
+    .navigation_sec.top{
+        color:black;
+        background: #f4f4f4ba;;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+    }
+    .navigation_sec.top .logo>a{
+    background: url(../img/logo_black.png) no-repeat 50% 50% /contain;
+    }
+    
+    .navigation_sec.top:hover .logo>a{
+    background: url(../img/logo_white.png) no-repeat 50% 50% /contain;
+    }
+    .navigation_sec.top:hover{
+    color:white;
+    }
+    .navigation_sec.top:hover {
+    background: rgba(0, 73, 43, 0.95);
+    height: 330px;
+    color: #fff;
+    }
+    
+    
+    
+    
+    .menu>.inner_contents{
+        padding-top:50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    .menu_img{
+        width: 45%;
+    }
+    .menu_info{
+        width: 50%;
+    
+    }
+    .name{
+        font-size:45px ;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .info{
+        font-size: 20px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .underline{
+        border-bottom:1px solid #919191;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .ingredient{
+        font-size: 13px;
+        color: rgb(0 0 0 / 51%);
+        display: flex;
+        font-weight: 500;
+        margin-bottom:40px;
+    }
+    
+    .allergy{
+        font-size: 13px;
+        color: rgb(0 0 0 / 51%);
+        font-weight: 500;
+    }
+    
+    
+    
+    
+    div.share{
+        display: flex;
+        width: 10%;
+        margin-left:auto;
+    }
+    div.share img{
+        opacity: 0.6;
+    }
+    div.share img:hover{
+        opacity: 1;
+    }
+    
+    
 }
 
-.navigation_sec.top:hover .logo>a{
-background: url(../img/logo_white.png) no-repeat 50% 50% /contain;
-}
-.navigation_sec.top:hover{
-color:white;
-}
-.navigation_sec.top:hover {
-background: rgba(0, 73, 43, 0.95);
-height: 330px;
-color: #fff;
-}
 
 
 
 
-.menu>.inner_contents{
-    padding-top:50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 100px;
-}
-.menu_img{
-    width: 45%;
-}
-.menu_info{
-    width: 50%;
-
-}
-.name{
-    font-size:45px ;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-.info{
-    font-size: 20px;
-    margin-bottom: 30px;
-
-}
-
-.underline{
-    border-bottom:1px solid #919191;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-.ingredient{
-    font-size: 13px;
-    color: rgb(0 0 0 / 51%);
-    display: flex;
-    font-weight: 500;
-    margin-bottom:40px;
-}
-
-.allergy{
-    font-size: 13px;
-    color: rgb(0 0 0 / 51%);
-    font-weight: 500;
-}
 
 
 
 
-div.share{
-    display: flex;
-    width: 10%;
-    margin-left:auto;
+@media (max-width:767px) {
+
+
+    
+    .navigation_sec.top{
+        color:black;
+        background: #f4f4f4ba;;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+    }
+    .navigation_sec.top .logo>a{
+    background: url(../img/logo_black.png) no-repeat 50% 50% /contain;
+    }
+    
+    .navigation_sec.top:hover .logo>a{
+    background: url(../img/logo_white.png) no-repeat 50% 50% /contain;
+    }
+    .navigation_sec.top:hover{
+    color:white;
+    }
+    .navigation_sec.top:hover {
+    background: rgba(0, 73, 43, 0.95);
+    height: 330px;
+    color: #fff;
+    }
+    
+    
+    
+    
+    .menu>.inner_contents{
+        padding-top:50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 100px;
+        flex-direction: column;
+    }
+    .menu_img{
+        width: 80%;
+    }
+    .menu_info{
+        width: 80%;
+    
+    }
+    .name{
+        font-size:25px ;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .info{
+        font-size: 16px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .underline{
+        border-bottom:1px solid #919191;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .ingredient{
+        font-size: 13px;
+        color: rgb(0 0 0 / 51%);
+        display: flex;
+        font-weight: 500;
+        margin-bottom:40px;
+    }
+    
+    .allergy{
+        font-size: 13px;
+        color: rgb(0 0 0 / 51%);
+        font-weight: 500;
+    }
+    
+    
+    
+    
+    div.share{
+        display: flex;
+        width: 20%;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+    div.share img{
+        opacity: 0.6;
+    }
+    div.share img:hover{
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+    
 }

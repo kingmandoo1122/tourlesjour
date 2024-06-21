@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>event_info</title>
+    <title>menu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_tablet.css">
     <link rel="stylesheet" href="./css/style_mobile.css">
-    <link rel="stylesheet" href="./css/event_info.css">
-    <link rel="stylesheet" href="./css/event_info_tablet.css">
-    <link rel="stylesheet" href="./css/event_info_mobile.css">
-    <script src="./js/event_info.js"> </script>
+    <link rel="stylesheet" href="./css/news.css">
+    <script src="./js/news_info.js"></script>
 </head>
 <body>
     <header id="pc" >
@@ -29,7 +27,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="brand_story.html">브랜드 스토리</a>
+                        <li class="on"><a href="brand_story.html">브랜드 스토리</a>
                             <ul>
                                 <li><a href="brand_story.html">브랜드 스토리</a></li>
                                 <li><a href="brand_story.html">뚜레쥬르 광고</a></li>
@@ -52,7 +50,7 @@
                                 <li><a href="menu.html">음료</a></li>
                             </ul>
                         </li>
-                        <li class="on"><a href="event.html">이벤트</a>
+                        <li><a href="event.html">이벤트</a>
                             <ul>
                                 <li><a href="event.html">진행중인 이벤트</a></li>
                                 <li><a href="event.html">이벤트 당첨자</a></li>
@@ -86,7 +84,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="brand_story.html">브랜드 스토리</a>
+                        <li class="on"><a href="brand_story.html">브랜드 스토리</a>
                             <ul>
                                 <li><a href="brand_story.html">브랜드 스토리</a></li>
                                 <li><a href="brand_story.html">뚜레쥬르 광고</a></li>
@@ -109,7 +107,7 @@
                                 <li><a href="menu.html">음료</a></li>
                             </ul>
                         </li>
-                        <li class="on"><a href="event.html">이벤트</a>
+                        <li><a href="event.html">이벤트</a>
                             <ul>
                                 <li><a href="event.html">진행중인 이벤트</a></li>
                                 <li><a href="event.html">이벤트 당첨자</a></li>
@@ -137,20 +135,128 @@
             <div class="inner_contents">
                 <p>
                     <a href="index.html">홈</a> &middot;
-                    <a href="event.html" class="point">이벤트</a>
+                    <a href="menu.html">브랜드 스토리</a> &middot;
+                    <a href="news.html" class="point">뉴스 & 공지사항</a>
                 </p>
             </div>
         </section>
-        <section class="event_info">
+        <section class="news_list">
             <div class="inner_contents">
-                <h1>6월 뚜레쥬르 배달앱 할인 혜택</h1>
-                <p>2024-06-01 ~ 2024-06-30</p>
-                <img src="./img/event/event_info/202453112541277689.jpg" alt="뚜레쥬르 배달앤 할인 혜택">
-                <a href="event.html">목록 보기</a>
+                <p>총 <span class="count point">235</span>개의 글이 등록되었습니다.</p>
+                <table>
+                    <tbody>
+                        <tr class="title">
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>등록일</th>
+                        </tr>
+                        <tr>
+                            <td>235</td>
+                            <td><a href="news_info.html"><span>아메리카노＆아이스티 990원 이벤트 진행 매장 안내</span></a></td>
+                            <td>2024.05.20</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>234</td>
+                            <td><a href="news_info.html"><span>뚜레쥬르 BEST 제품 20% 할인 행사 진행 매장 안내</span></a></td>
+                            <td>2024.01.25</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>233</td>
+                            <td><a href="news_info.html"><span>CJ푸드빌 개인정보처리방침 개정 고지</span></a></td>
+                            <td>2023.12.20</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>232</td>
+                            <td><a href="news_info.html"><span>CJ푸드빌 개인정보처리방침 개정 고지</span></a></td>
+                            <td>2023.12.01</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>231</td>
+                            <td><a href="news_info.html"><span>수줍은 사과 케이크 30% 할인 행사 진행 매장 안내</span></a></td>
+                            <td>2023.10.16</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>230</td>
+                            <td><a href="news_info.html"><span>소금 버터롤 2＋1 프로모션 진행 매장 안내</span></a></td>
+                            <td>2023.10.06</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>229</td>
+                            <td><a href="news_info.html"><span>CGV 영화 관람쿠폰 증정 이벤트 진행 매장 안내</span></a></td>
+                            <td>2023.08.24</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>228</td>
+                            <td><a href="news_info.html"><span>CJ푸드빌 영상정보처리기기 운영/관리방침 개정 고지</span></a></td>
+                            <td>2023.07.06</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>227</td>
+                            <td><a href="news_info.html"><span>CJ푸드빌 개인정보처리방침 개정 고지</span></a></td>
+                            <td>2023.07.06</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>226</td>
+                            <td><a href="news_info.html"><span>뚜레쥬르X카멜 콜라보 굿즈 비치타월 교환 가능 매장 안내</span></a></td>
+                            <td>2023.06.14</td>
+                        </tr>
+
+                        <tr>
+                            <td>225</td>
+                            <td><a href="news_info.html"><span>	
+                                CJ푸드빌 개인정보처리방침 개정 고지</span></a></td>
+                            <td>2023.05.22</td>
+                        </tr>
+                        <tr>
+                            <td>224</td>
+                            <td><a href="news_info.html"><span>	
+                                CJ푸드빌 이용약관 개정 고지</span></a></td>
+                            <td>2023.05.22</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="news_list_num">
+                    <span class="news_left_arrow"></span>
+                    <div>
+                        <ul class="number_lists">
+                            <li class="on"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                        </ul>
+                    </div>
+                    <span class="news_right_arrow"></span>
+                </div>
+                <div class="search_news">  
+                    <form class="serach_area" action="#">
+                        <label class="hidden" for="searchtype"></label>
+                        <select id="searchtype">
+                            <option value="#">제목+내용</option>
+                            <option value="#">제목</option>
+                            <option value="#">내용</option>
+                        </select>
+                        <label class="hidden" for="searchtxt"></label><br>
+                        <input id="searchtxt" type="text" placeholder="검색어를 입력해주세요.">
+                        <label for="search"></label>
+                        <input id="searchbtn" type="button" value="검색">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-
     <footer>
         <section class="searchstore_sec">
             <div class="inner_contents">
@@ -206,5 +312,6 @@
         </section>
     </footer>
     <script src="./js/common_mobile.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
