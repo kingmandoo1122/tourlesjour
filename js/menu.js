@@ -204,7 +204,7 @@ let bread_array =[
 ]
 let cake_array = [
     {
-        pcate : "생크림케이크",
+        pcate : "캐릭터케이크",
         name : `헬로카봇 펜타스톰X라이프캐논`,
         imgframe :`<img src="./img/menu/cake_1.jpg" alt="헬로카봇 펜타스톰X라이프캐논">`,
         info : `펜타스톰X라이프 캐논 모드가 지구를 지키러
@@ -213,7 +213,7 @@ let cake_array = [
         ingredient : ""
     },
     {
-        pcate : "생크림케이크",
+        pcate : "캐릭터케이크",
         name : `카3_라이트닝맥퀸_케이크`,
         imgframe :`<img src="./img/menu/cake_2.jpg" alt="카3_라이트닝맥퀸_케이크">`,
         info : `빨간 라이트닝 맥퀸 피규어가 레이싱에서
@@ -222,7 +222,7 @@ let cake_array = [
         ingredient : ""
     },
     {
-        pcate : "생크림케이크",
+        pcate : "캐릭터케이크",
         name : `곰돌이 푸_알럽허니`,
         imgframe :`<img src="./img/menu/cake_3.jpg" alt="곰돌이 푸_알럽허니">`,
         info : `달콤한 꿀 바나나 크림과 바나나 리플 잼을
@@ -232,7 +232,7 @@ let cake_array = [
         ingredient : ""
     },
     {
-        pcate : "생크림케이크",
+        pcate : "캐릭터케이크",
         name : `크앙! 티라노 케이크`,
         imgframe :`<img src="./img/menu/cake_4.jpg" alt="크앙! 티라노 케이크">`,
         info : `알을 노리는 랩터로부터 크앙! 포효하며 알을
@@ -243,7 +243,7 @@ let cake_array = [
         ingredient : ""
     },
     {
-        pcate : "무스케이크",
+        pcate : "캐릭터케이크",
         name : `티니핑과 슈가베리 케이크`,
         imgframe :`<img src="./img/menu/cake_5.jpg" alt="티니핑과 슈가베리 케이크">`,
         info : `달콤한 초코 시트에 가나슈와 딸기 꿀리를
@@ -312,6 +312,97 @@ let cake_array = [
         그린 & 핑크빛의 사랑스러운 케이크`,
         ingredient : ""
     }
+,
+    {
+        pcate : "조각케이크",
+        name : `클래식 오브 치즈케이크(조각)`,
+        imgframe :`<img src="./img/menu/cake_13.jpg" alt="클래식 오브 치즈케이크(조각)">`,
+        info : `엄선한 자연치즈의 진한 풍미가
+        그대로 살아있는 부드럽고 촉촉한
+        수플레 타입의 클래식 치즈 케이크`,
+        ingredient : ""
+    }
+,
+{
+    pcate : "조각케이크",
+    name : `쇼콜라 갸또(조각)`,
+    imgframe :`<img src="./img/menu/cake_14.jpg" alt="쇼콜라 갸또(조각)">`,
+    info : `초코&블랙초코 시트에 진한 가나슈 초콜릿이
+    샌드된 프리미엄 조각 케이크`,
+    ingredient : ""
+}
+,
+{
+    pcate : "조각케이크",
+    name : `까망쿠키 치즈(조각)`,
+    imgframe :`<img src="./img/menu/cake_15.jpg" alt="까망쿠키 치즈(조각)">`,
+    info : `부드러운 치즈 무스와 달콤한 까망쿠키가 어우러져 더욱 맛있게 즐길 수 있는 치즈 케이크`,
+    ingredient : ""
+}
+,
+{
+    pcate : "조각케이크",
+    name : `쁘띠 한라봉&오렌지 케이크`,
+    imgframe :`<img src="./img/menu/cake_16.jpg" alt="쁘띠 한라봉&오렌지 케이크">`,
+    info : `
+    향긋한 한라봉 시트에 상큼한 오렌지와
+    한라봉 맛 생크림을 샌드하여 입안 가득 상큼한
+    맛을 느낄 수 있는 디저트 케이크`,
+    ingredient : ""
+}
+,
+{
+    pcate : "무스케이크",
+    name : `고구마케이크`,
+    imgframe :`<img src="./img/menu/cake_17.jpg" alt="고구마케이크">`,
+    info : `
+    진한 고구마맛을 더하여 한층 풍미가 깊어진
+부드러운 고구마케이크`,
+    ingredient : ""
+}
+,
+{
+    pcate : "무스케이크",
+    name : `클래식 치즈 케이크`,
+    imgframe :`<img src="./img/menu/cake_18.jpg" alt="클래식 치즈 케이크">`,
+    info : `
+    엄선한 자연치즈의 진한 풍미가
+그대로 살아있는 부드럽고 촉촉한
+수플레 타입의 클래식 치즈 케이크`,
+    ingredient : ""
+}
+
+,
+{
+    pcate : "대형케이크",
+    name : `6호 2단 화이트케이크(다리포함)`,
+    imgframe :`<img src="./img/menu/cake_19.jpg" alt="6호 2단 화이트케이크(다리포함)">`,
+    info : `
+    장식 하나하나에 더욱더 정성을 담은
+축하용 화이트 단케익`,
+    ingredient : ""
+}
+,
+{
+    pcate : "대형케이크",
+    name : `티니핑 디저트마을`,
+    imgframe :`<img src="./img/menu/cake_20.jpg" alt="티니핑 디저트마을">`,
+    info : `
+    
+달콤한 디저트 장식과 말랑핑 피규어를 올린
+초코&딸기맛 2단 케이크에
+미니 피규어와 초코펜으로 직접 꾸미고
+완성하는 러블리한 DIY 케이크`,
+    ingredient : ""
+}
+
+
+
+
+
+
+
+
 
 ]
 
@@ -371,14 +462,382 @@ let deli_array = [
     {
         pcate : "샐러드",
         name : `그릴치킨 오렌지 샐러드`,
-        imgframe :`<img src="./img/menu/deli_5.jpg" alt="그릴치킨 오렌지 샐러드">`,
+        imgframe :`<img src="./img/menu/deli_6.jpg" alt="그릴치킨 오렌지 샐러드">`,
         info : `
         담백한 닭가슴살을 가득 넣고 시트러스한
 오렌지와 유자 오리엔탈 드레싱으로
 입맛을 돋운 단백질 든든 볼샐러드`,
         ingredient : ""
     },
+    {
+        pcate : "간편식",
+        name : `토마토 라구라자냐`,
+        imgframe :`<img src="./img/menu/deli_7.jpg" alt="토마토 라구라자냐">`,
+        info : `
+        플랜트 미트와 신선한 토마토를
+가득 넣어 끓인 라구소스와 베사멜소스,
+모짜렐라 치즈가 부드럽게 어우러진 제품
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "간편식",
+        name : `베이컨 에그 브리오쉬`,
+        imgframe :`<img src="./img/menu/deli_8.jpg" alt="베이컨 에그 브리오쉬">`,
+        info : `
+        담백한 오믈렛, 짭짤한 베이컨을 넣은
+폭신한 브리오쉬 샌드를 따뜻하게
+치즈멜팅하여 즐기는 제품
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "간편식",
+        name : `트러플 크림 파스타`,
+        imgframe :`<img src="./img/menu/deli_9.jpg" alt="트러플 크림 파스타">`,
+        info : `
+        큼직한 리가토니 파스타에 구운버섯을
+가득 올린 트러플 크림치즈 파스타
+`,
+        ingredient : ""
+    },
+
+
+
+
+
+]
+
+let dessert_array = [
+    {
+        pcate : "구움양과",
+        name : `리얼브라우니`,
+        imgframe :`<img src="./img/menu/dessert_1.jpg" alt="리얼브라우니">`,
+        info : `
+        다크초콜릿과 밀크초콜릿의 달콤한 맛을
+느낄 수 있는 쫀득한 식감의 브라우니
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "구움양과",
+        name : `호두 브라우니`,
+        imgframe :`<img src="./img/menu/dessert_2.jpg" alt="호두 브라우니">`,
+        info : `
+        진한 발로나 초콜렛의 풍미와 고소한 호두가 어우러져 입안에서 부드럽게 녹아내리는 브라우니
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "구움양과",
+        name : `생크림 버터 스콘`,
+        imgframe :`<img src="./img/menu/dessert_3.jpg" alt="생크림 버터 스콘">`,
+        info : `
+        생크림이 들어가 부드럽고
+버터의 풍미가 좋은 촉촉한 스콘
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "구움양과",
+        name : `오리지널 까눌레`,
+        imgframe :`<img src="./img/menu/dessert_4.jpg" alt="오리지널 까눌레">`,
+        info : `
+        
+겉은 카라멜화되어 바삭하지만 속은 푸딩같이 부드러운 맛이 일품인 고급 디저트
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "마카롱",
+        name : `쿠키앤크림 뚱카롱`,
+        imgframe :`<img src="./img/menu/dessert_5.jpg" alt="쿠키앤크림 뚱카롱">`,
+        info : `
+        
+        버터크림치즈에 쿠키 파우더와 초코쿠키가
+        들어있어 바삭한 식감과 달콤한 맛이 조화로운 뚱카롱
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "마카롱",
+        name : `앙버터 뚱카롱`,
+        imgframe :`<img src="./img/menu/dessert_6.jpg" alt="앙버터 뚱카롱">`,
+        info : `
+        
+        달콤한 팥앙금과 우유크림, 가염버터로 만들어 단짠단짠의 조화가 어우러진 마카롱
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "마카롱",
+        name : `딸기 우유 뚱카롱`,
+        imgframe :`<img src="./img/menu/dessert_7.jpg" alt="딸기 우유 뚱카롱">`,
+        info : `
+풍성한 우유크림에 상큼한 딸기퓨레가 들어가 딸기 우유맛이 입 안 가득 퍼지는 뚱카롱
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "아이스크림",
+        name : `기쁨이 샤인머스캣 아이스캔디`,
+        imgframe :`<img src="./img/menu/dessert_8.jpg" alt="기쁨이 샤인머스캣 아이스캔디">`,
+        info : `
+
+        올 여름 가장 기쁜 순간을 만들어줄,
+        상큼한 샤인머스캣 아이스캔디
+`,
+        ingredient : ""
+    },
+
+
+    {
+        pcate : "아이스크림",
+        name : `당황이 딸기 아이스캔디`,
+        imgframe :`<img src="./img/menu/dessert_9.jpg" alt="당황이 딸기 아이스캔디">`,
+        info : `
+        너무 맛있어서 당황할 걸?
+        달콤한 딸기맛을 시원하게 즐길 수 있는
+        아이스캔디
+`,
+        ingredient : ""
+    },
+
+
+
+
+    {
+        pcate : "아이스크림",
+        name : `나뚜루 바닐라&아몬드바`,
+        imgframe :`<img src="./img/menu/dessert_10.jpg" alt="나뚜루 바닐라&아몬드바">`,
+        info : `
+        마다가스카르산 바닐라와 우유로 만든
+진한 풍미와 쫀득한 식감의 아이스바
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "아이스크림",
+        name : `라라스윗 초콜릿 모나카`,
+        imgframe :`<img src="./img/menu/dessert_11.jpg" alt="라라스윗 초콜릿 모나카">`,
+        info : `
+        국내산 생우유에 다크 초콜릿의 묵직함을 더해
+        더 깊고 진한 초콜릿 모나카 아이스크림
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "초콜릿캔디",
+        name : `소프트 초콜릿`,
+        imgframe :`<img src="./img/menu/dessert_12.jpg" alt="소프트 초콜릿">`,
+        info : `
+        부드럽고 달콤한 밀크 초콜릿이
+입 안에서 사르르 녹아 내리는
+한 입 사이즈의 소프트 초콜릿
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "초콜릿캔디",
+        name : `소프트 초콜릿`,
+        imgframe :`<img src="./img/menu/dessert_13.jpg" alt="포실포실 솜사탕">`,
+        info : `
+        천연색소와 유기농 설탕을 활용하여
+        신맛과 단맛을 동시에 느낄 수 있는 솜사탕
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "초콜릿캔디",
+        name : `헬로카봇 젤리스틱 (사파리세이버)`,
+        imgframe :`<img src="./img/menu/dessert_14.jpg" alt="헬로카봇 젤리스틱 (사파리세이버)">`,
+        info : `
+        인기만점 헬로카봇 캐릭터인
+사파리세이버 얼굴 모양의
+새콤달콤 딸기맛 젤리스틱
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "초콜릿캔디",
+        name : `캐빈디쉬 병캔디`,
+        imgframe :`<img src="./img/menu/dessert_15.jpg" alt="캐빈디쉬 병캔디">`,
+        info : `
+        고급스러운 병 속에 다채로운 모양과 색깔의
+        과일 캔디가 아기자기하게 담겨 있어
+        선물용으로 좋은 병캔디
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "잼스프레드",
+        name : `뚜레쥬르가 만든 딸기잼 120g`,
+        imgframe :`<img src="./img/menu/dessert_16.jpg" alt="뚜레쥬르가 만든 딸기잼 120g">`,
+        info : `
+        국내산 딸기를 사용하여 딸기향과 맛을 살린
+뚜레쥬르가 만든 딸기잼
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "잼스프레드",
+        name : `간편하게 발라먹는 앙버터 스프레드`,
+        imgframe :`<img src="./img/menu/dessert_17.jpg" alt="간편하게 발라먹는 앙버터 스프레드">`,
+        info : `
+      
+팥과 버터가 부드럽게 섞여있어
+간편하게 즐길 수 있는 튜브 타입 잼
+`,
+        ingredient : ""
+    }
+
+
     
+]
+
+
+let drink_array = [
+    {
+        pcate : "커피",
+        name : `원샷! 아샷추`,
+        imgframe :`<img src="./img/menu/drink_1.jpg" alt="원샷! 아샷추">`,
+        info : `
+        달콤한 복숭아 홍차에 에스프레소 샷을 더해
+        더운 날씨에도 깔끔하게 즐길 수 있는
+        에스프레소 음료
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "커피",
+        name : `꿀꺽꿀꺽! 꿀메리카노`,
+        imgframe :`<img src="./img/menu/drink_2.jpg" alt="꿀꺽꿀꺽! 꿀메리카노">`,
+        info : `아메리카노에 달콤한 아카시아 꿀을 더해
+        달콤하게 수분 충전하는 에스프레소 음료
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "커피",
+        name : `그랑드카페 콜드브루 보틀(원액)`,
+        imgframe :`<img src="./img/menu/drink_3.jpg" alt="그랑드카페 콜드브루 보틀(원액)">`,
+        info : `뚜레쥬르의 그랑드카페 스페셜티 원두를
+        저온고압 추출하여 부드러운 산미와
+        깔끔한 풍미를 즐길 수 있는
+        콜드브루 커피 원액
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "블랜디드",
+        name : `사르르 딸기 쉐이크`,
+        imgframe :`<img src="./img/menu/drink_4.jpg" alt="사르르딸기쉐이크">`,
+        info : `
+        달콤한 우유맛 쉐이크에 딸기 다이스가
+        톡톡 씹히는 새콤달콤 딸기 쉐이크
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "블랜디드",
+        name : `사르르 우유 쉐이크`,
+        imgframe :`<img src="./img/menu/drink_5.jpg" alt="사르르 우유 쉐이크">`,
+        info : `
+        빵과 잘 어울리는 부드럽고 고소한 우유쉐이크.
+        깔끔한 뒷맛과 부담스럽지 않은 바디감으로
+        남녀노소 모두 선호하는 제품
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "과일주스에이드",
+        name : `자몽 에이드`,
+        imgframe :`<img src="./img/menu/drink_6.jpg" alt="자몽 에이드">`,
+        info : `
+        자몽과육과 탄산수를 넣어
+톡 쏘는 맛이 일품인 자몽에이드
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "과일주스에이드",
+        name : `레몬 에이드`,
+        imgframe :`<img src="./img/menu/drink_7.jpg" alt="레몬 에이드">`,
+        info : `
+        레몬의 상큼함과 탄산수를 넣어
+톡 쏘는 맛이 일품인 레몬에이드
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "티라떼",
+        name : `유자레몬티`,
+        imgframe :`<img src="./img/menu/drink_8.jpg" alt="유자레몬티">`,
+        info : `
+       
+꿀유자차에 새콤한 레몬즙을 넣어
+더욱 맛있는 유자차
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "티라떼",
+        name : `핫 초코`,
+        imgframe :`<img src="./img/menu/drink_9.jpg" alt="핫 초코">`,
+        info : `
+        제품설명
+        진한 초콜릿 파우더와 부드러운 스팀우유가 어우러진 핫초코
+`,
+        ingredient : ""
+    },
+
+    {
+        pcate : "티라떼",
+        name : `딸기라떼`,
+        imgframe :`<img src="./img/menu/drink_10.jpg" alt="딸기라떼">`,
+        info : `
+        톡톡 씹히는 달콤한 딸기 다이스와 고소한 우유의 조화가 돋보이는 과일라떼
+`,
+        ingredient : ""
+    },
+
+
+    {
+        pcate : "우유병음료",
+        name : `곰돌이 푸_신선한 우유`,
+        imgframe :`<img src="./img/menu/drink_11.jpg" alt="곰돌이 푸_신선한 우유">`,
+        info : `
+        
+원유의 영양과 신선함을 그대로 담고 있는
+고소한 흰 우유
+`,
+        ingredient : ""
+    },
+    {
+        pcate : "우유병음료",
+        name : `산 펠레그리노(500ML)`,
+        imgframe :`<img src="./img/menu/drink_12.jpg" alt="산 펠레그리노">`,
+        info : `
+        
+부드러운 탄산감과 깔끔한 맛이 특징인
+500 ml 용량의 탄산수
+`,
+        ingredient : ""
+    }
+
+
+
+
 
 
 ]
@@ -389,11 +848,4 @@ let deli_array = [
 
 
 
-
-
-
-let product_array = [bread_array,cake_array,deli_array,1,1]
-
-console.log(product_array[0].length)
-
-console.log(product_array.cate["bread"])
+let product_array = [bread_array,cake_array,deli_array,dessert_array,drink_array]

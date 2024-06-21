@@ -40,7 +40,7 @@ let food_menu_ul_li2_a = document.querySelectorAll(".food_menu_ul>li>ul>li>a") /
 
 // let food_menu_ul_lists = [food_menu_ul_li_1,food_menu_ul_li_2,food_menu_ul_li_3,food_menu_ul_li_4,food_menu_ul_li_5]
 
-
+console.log(food_menu_ul_li2_a)
     
 let bread_ul_li = document.querySelectorAll(".bread_ul>li")
 let cake_ul_li = document.querySelectorAll(".cake_ul>li")
@@ -182,7 +182,8 @@ depth2select(drink_ul_li)
 
 // 1뎁스메뉴
 for(let i=0 ; i<product_array.length ; i++){
-    food_menu_ul_li_a[i].addEventListener("click",function(){
+    food_menu_ul_li_a[i].addEventListener("click",function(e){
+        e.preventDefault()
         let category_name = this.getAttribute("data-category")
         let result_array = []
         product_array[i].map(function(item){
@@ -197,13 +198,14 @@ for(let i=0 ; i<product_array.length ; i++){
 }
 
 
-
+console.log(food_menu_ul_li2_a)
 
 
 // 2뎁스메뉴
 
-for(let i=0 ; i<product_array[0].length ; i++){
-    food_menu_ul_li2_a[i].addEventListener("click",function(){
+for(let i=0 ; i<food_menu_ul_li2_a.length ; i++){
+    food_menu_ul_li2_a[i].addEventListener("click",function(e){
+        e.preventDefault()
         let category_name = this.getAttribute("data-category")
         let depth1num = this.getAttribute("data-num")
         let result_array = []

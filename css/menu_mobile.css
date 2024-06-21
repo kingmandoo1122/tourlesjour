@@ -49,13 +49,11 @@
         }
         
         .food_menu .inner_contents>p{
-            text-align: right;
         color: rgba(0, 0, 0, 0.8);
         margin-bottom: 24px;
         font-size: 15px;
         width: 90%;
-        margin-left: auto;
-        margin-top:25px;
+        margin-top: 25px;
         }
         .food_menu_ul{
             width: 100%;
@@ -63,7 +61,7 @@
             justify-content: space-between;
             position: sticky;
             font-weight: 500;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             top:0;
             z-index: 100;
         }
@@ -154,7 +152,7 @@
         
         .menu_wrap{
             position: relative;
-            height: 2000px;
+            height: auto;
             font-weight: 500;
         }
         .menu_wrap>div{
@@ -201,7 +199,7 @@
             /* border: 1px solid black; */
             width: 45%;
             margin-right: 5%;
-            height: 175px;
+            height: 200px;
             margin-bottom:20px;
             text-align: center;
             position: relative;
