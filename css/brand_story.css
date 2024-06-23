@@ -418,6 +418,12 @@
     text-align: left;
     margin-left: auto;
 }
+
+.history_ol>li:last-of-type{
+    padding-bottom:100px;
+}
+
+
 .history_ol>li:nth-of-type(2n)>h5{
     position: relative;
 }
@@ -448,6 +454,7 @@
 .sub_history{
     height: 4100px;
     position: relative;
+    z-index: -1;
 }
 
 
