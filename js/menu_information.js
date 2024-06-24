@@ -1,9 +1,10 @@
-function showList(array){
+function showList(array,tabnumber){
+    console.log(array)
     let result =""
     for(let i=0; i<array.length;i++){
         
         result +=`<li><div class="info">
-        <a href="menu_info.html">
+        <a href="menu_info.html?tab=${tabnumber}&pid=${array[i].pid}">
         <p>영양성분</p>
         <ul>
             <li>열랑(Kcal) : 280</li>
@@ -25,7 +26,7 @@ function showList(array){
 window.onload = function(){
 
 
-let food_menu_ul_li_a = document.querySelectorAll(".food_menu_ul>li>a")
+let food_menu_ul_li_a = document.querySelectorAll(".food_menu_ul>li>a") // 5개
 let menu_wrap_div = document.querySelectorAll(".menu_wrap>div")
 
 let food_menu_ul_li = document.querySelectorAll(".food_menu_ul>li")
@@ -56,9 +57,13 @@ for(let i=0; i<food_menu_ul_li_a.length;i++){
         for(let j=0;j<food_menu_ul_li_a.length;j++){
             food_menu_ul_li[j].classList.remove("on")
 
-            for(let k=0;k<menu_li[i].length;k++){
-                menu_li[i][k].classList.remove("on")
+
+            for(let j=0;j<menu_li.length;j++){
+                menu_li[j].forEach(function(li){
+                    li.classList.remove("on")
+                })
             }
+
 
         }
         food_menu_ul_li[i].classList.add("on")
@@ -66,14 +71,6 @@ for(let i=0; i<food_menu_ul_li_a.length;i++){
 
     })
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -89,48 +86,6 @@ function depth2select(tag){
         })
     }
 }
-
-
-// for(let i=0;i<bread_ul_li.length;i++){
-//     bread_ul_li[i].addEventListener("click",function(){
-//         for(let j=0; j<bread_ul_li.length;j++){
-//             bread_ul_li[j].classList.remove("on")
-            
-//         }
-//         bread_ul_li[i].classList.add("on")
-        
-//     })
-// }
-
-
-// for(let i=0;i<bread_ul_li.length;i++){
-//     bread_ul_li[i].addEventListener("click",function(){
-//         for(let j=0; j<bread_ul_li.length;j++){
-//             bread_ul_li[j].classList.remove("on")
-//             for(let k=0;k<food_menu_ul_li.length;k++){
-//                 food_menu_ul_li[k].classList.remove("on")
-//             }
-//         }
-//         bread_ul_li[i].classList.add("on")
-//         food_menu_ul_li[0].classList.add("on")
-//     })
-// }
-
-
-// for(let i=0;i<cake_ul_li.length;i++){
-//     cake_ul_li[i].addEventListener("click",function(){
-//         for(let j=0; j<cake_ul_li.length;j++){
-//             cake_ul_li[j].classList.remove("on")
-//             for(let k=0;k<food_menu_ul_li.length;k++){
-//                 food_menu_ul_li[k].classList.remove("on")
-//             }
-//         }
-//         cake_ul_li[i].classList.add("on")
-//         food_menu_ul_li[1].classList.add("on")
-//     })
-// }
-
-
 
 
 for(let p=0; p<menu_li.length;p++){
@@ -152,7 +107,6 @@ for(let p=0; p<menu_li.length;p++){
 
 
 
-
 let first_array = []
 bread_array.map(function(item){
     if(item.pcate =="식빵"){
@@ -161,7 +115,7 @@ bread_array.map(function(item){
 })
 
 
-document.querySelector(".pro_list").innerHTML = showList(first_array)
+// document.querySelector(".pro_list").innerHTML = showList(first_array)
 
 
 
@@ -181,19 +135,20 @@ depth2select(drink_ul_li)
 
 
 // 1뎁스메뉴
+
 for(let i=0 ; i<product_array.length ; i++){
     food_menu_ul_li_a[i].addEventListener("click",function(e){
         e.preventDefault()
         let category_name = this.getAttribute("data-category")
+        let tabnum = this.getAttribute("data-num")
+        console.log(tabnum)
         let result_array = []
-        product_array[i].map(function(item){
-            if(item.pcate == category_name){
-                result_array.push(item)
-            }
+
+        product_array[tabnum].map(function(item){
+            result_array.push(item)
         })
-        // console.log(result_array)
-        // console.log(showList(result_array))
-        document.querySelector(".pro_list").innerHTML = showList(result_array)
+
+        document.querySelector(".pro_list").innerHTML = showList(result_array,tabnum)
     })
 }
 
@@ -209,113 +164,47 @@ for(let i=0 ; i<food_menu_ul_li2_a.length ; i++){
         let category_name = this.getAttribute("data-category")
         let depth1num = this.getAttribute("data-num")
         let result_array = []
-
         product_array[depth1num].map(function(item){
             if(item.pcate == category_name){
                 result_array.push(item)
             }
         })
         console.log(result_array)
-        // console.log(showList(result_array))
-        document.querySelector(".pro_list").innerHTML = showList(result_array)
+        document.querySelector(".pro_list").innerHTML = showList(result_array,depth1num)
 
     })
 }
 
 
-
-
-// const numbers = [1, 2, 3, 4, 5];
-
-// const doubledNumbers = numbers.map(function(number) {
-//     return number * 2; // 매핑된 결과를 새로운 배열로 반환
-// });
-
+let bread_ul_li_a = document.querySelector(".bread_ul>li:nth-of-type(1)>a")
+let cake_ul_li_a = document.querySelector(".cake_ul>li:nth-of-type(1)>a")
+let deli_ul_li_a = document.querySelector(".deli_ul>li:nth-of-type(1)>a")
+let dessert_li_a = document.querySelector(".dessert_ul>li:nth-of-type(1)>a")
+let drink_ul_li_a = document.querySelector(".drink_ul>li:nth-of-type(1)>a")
 
 
 
+let a_list = [bread_ul_li_a,cake_ul_li_a,deli_ul_li_a,dessert_li_a,drink_ul_li_a]
 
 
+for(let i=0;i<a_list.length;i++){
 
-
-// for(let i=0;i<food_menu_ul_li_a.length;i++){
+    a_list[i].addEventListener("click",function(e){
+        e.preventDefault()
+        let category_name = this.getAttribute("data-category")
+        let depth1num = this.getAttribute("data-num")
+        let result_array = []
+        product_array[depth1num].map(function(item){
+            result_array.push(item)
+        })
+        document.querySelector(".pro_list").innerHTML = showList(result_array,depth1num)
+        console.log(depth1num)
+        // document.querySelector(".pro_list").innerHTML = showList(result_array)
     
-//     food_menu_ul_li_a[i].addEventListener("click",function(e){
-//         e.preventDefault()
-//         for(let j=0;j<food_menu_ul_li_a.length;j++){
-//             food_menu_ul_li[j].classList.remove("on")
-//             menu_wrap_div[j].classList.remove("on")
-//             food_menu_ul_lists[j][0].classList.remove("on")
-//         }
-//         food_menu_ul_li[i].classList.add("on")
-//         menu_wrap_div[i].classList.add("on")
-//         food_menu_ul_lists[i][0].classList.add("on")
-//     })
-// }
-
-
-// for(let i=0;i<food_menu_ul_li_1.length;i++){
-//     food_menu_ul_li_1[i].addEventListener("click",function(){
-//         for(let j=0;j<food_menu_ul_li_1.length;j++)
-//         {food_menu_ul_li_1[j].classList.remove("on")
-//         menu_wrap_div[1].classList.remove("on")
-//         for(let k=0;k<food_menu_ul_li_a.length;k++){
-//             food_menu_ul_li[j].classList.remove("on")
-//         }
-//         }
-
-
-//         food_menu_ul_li[i].classList.add("on")
-//         food_menu_ul_li_1[i].classList.add("on")
-//         menu_wrap_div[0].classList.add("on")
-//     })
-
-// }
-
-
-
-
-
-// for(let i=0;i<food_menu_ul_li_2.length;i++){
-//     food_menu_ul_li_2[i].addEventListener("click",function(){
-
-//         for(let j=0;j<food_menu_ul_li_2.length;j++)
-//         {food_menu_ul_li_2[j].classList.remove("on")
-//         menu_wrap_div[0].classList.remove("on")
-//         food_menu_ul_li[j].classList.remove("on")}
-
-
-//         food_menu_ul_li[i].classList.add("on")
-//     food_menu_ul_li_2[i].classList.add("on")
-//     menu_wrap_div[1].classList.add("on")
-//     })
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-// for(let i=0; i<food_menu_ul_lists.length;i++){
-//     for(k=0;k<food_menu_ul_lists[i].length;k++){
-//         food_menu_ul_lists[i][k].addEventListener("click",function(){
-//             for(let j=0;j<food_menu_ul_lists[i].length;j++){
-//                 food_menu_ul_lists[i][j].classList.remove("on")
-//             }
-//             food_menu_ul_lists[i][i].classList.add("on")
-//         })
-//     }
-
     
-   
-// }
+    })
 
+}
 
 
 

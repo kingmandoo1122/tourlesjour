@@ -5,6 +5,7 @@
 let bread_array =[
     {
         bread_id : 1,
+        pid:0,
         pcate : "식빵",
         name : `고단백 현미 식빵`,
         imgframe :`<img src="./img/menu/bread_1.jpg" alt="고단백 현미 식빵">`,
@@ -18,6 +19,7 @@ let bread_array =[
     },
     {
         bread_id : 2,
+        pid:1,
         pcate : "식빵",
         name : `그대로 구워먹는 꿀 토스트 식빵`,
         imgframe :`<img src="./img/menu/bread_2.jpg" alt="그대로 구워먹는 꿀 토스트 식빵">`,
@@ -26,6 +28,7 @@ let bread_array =[
     },
     {
         bread_id : 3,
+        pid:2,
         pcate : "식빵",
         name : `착한빵식 통밀식빵`,
         imgframe :`<img src="./img/menu/bread_3.jpg" alt="착한빵식 통밀식빵">`,
@@ -37,6 +40,7 @@ let bread_array =[
     },
     {
         bread_id : 4,
+        pid:3,
         pcate : "건강빵",
         name : `고소 담백 더치브레드 건강빵`,
         imgframe :`<img src="./img/menu/bread_4.jpg" alt="고소 담백 더치브레드">`,
@@ -46,6 +50,7 @@ let bread_array =[
     },
     {
         bread_id : 5,
+        pid:4,
         pcate : "식빵",
         name : `고소함이 톡톡 곡물식빵`,
         imgframe :`<img src="./img/menu/bread_5.jpg" alt="고소함이 톡톡 곡물식빵">`,
@@ -55,6 +60,7 @@ let bread_array =[
     },
     {
         bread_id : 6,
+        pid:5,
         pcate : "건강빵",
         name : `마구마구 밤건강빵`,
         imgframe :`<img src="./img/menu/bread_6.jpg" alt="마구마구 밤식빵">`,
@@ -63,6 +69,7 @@ let bread_array =[
     },
     {
         bread_id : 7,
+        pid:6,
         pcate : "간식빵",
         name : `마구마구 밤식빵(1/2)`,
         imgframe :`<img src="./img/menu/bread_7.jpg" alt="마구마구 밤식빵(1/2)">`,
@@ -71,6 +78,7 @@ let bread_array =[
     },
     {
         bread_id : 8,
+        pid:7,
         pcate : "식빵",
         name : `72겹의 정성 데니쉬식빵`,
         imgframe :`<img src="./img/menu/bread_8.jpg" alt="72겹의 정성 데니쉬식빵">`,
@@ -81,6 +89,7 @@ let bread_array =[
     },
     {
         bread_id : 9,
+        pid:8,
         pcate : "간식빵",
         name : `순,식빵`,
         imgframe :`<img src="./img/menu/bread_9.jpg" alt="순,식빵">`,
@@ -91,6 +100,7 @@ let bread_array =[
     },
     {
         bread_id : 10,
+        pid:9,
         pcate : "식빵",
         name : `고소한 곡물식빵`,
         imgframe :`<img src="./img/menu/bread_10.jpg" alt="고소한 곡물식빵">`,
@@ -101,6 +111,7 @@ let bread_array =[
     },
     {
         bread_id : 11,
+        pid:10,
         pcate : "식빵",
         name : `촉촉 쫄깃 탕종식빵`,
         imgframe :`<img src="./img/menu/bread_11.jpg" alt="촉촉 쫄깃 탕종식빵">`,
@@ -110,6 +121,7 @@ let bread_array =[
     },
     {
         bread_id : 12,
+        pid:11,
         pcate : "식빵",
         name : `生生 생크림 식빵`,
         imgframe :`<img src="./img/menu/bread_12.jpg" alt="生生 생크림 식빵">`,
@@ -119,6 +131,7 @@ let bread_array =[
     },
     {
         bread_id : 13,
+        pid:12,
         pcate : "파이패스트리",
         name : `고메 버터 식빵`,
         imgframe :`<img src="./img/menu/bread_13.jpg" alt="고메 버터 식빵">`,
@@ -130,6 +143,7 @@ let bread_array =[
     },
     {
         bread_id : 14,
+        pid:13,
         pcate : "식빵",
         name : `통우유식빵`,
         imgframe :`<img src="./img/menu/bread_14.jpg" alt="통우유식빵">`,
@@ -141,6 +155,7 @@ let bread_array =[
     },
     {
         bread_id : 15,
+        pid:14,
         pcate : "식빵",
         name : `TLJ옥수수듬뿍옥수수식빵`,
         imgframe :`<img src="./img/menu/bread_15.jpg" alt="TLJ옥수수듬뿍옥수수식빵">`,
@@ -149,6 +164,7 @@ let bread_array =[
     },
     {
         bread_id : 16,
+        pid:15,
         pcate : "식빵",
         name : `더블 롤치즈 식빵`,
         imgframe :`<img src="./img/menu/bread_16.jpg" alt="더블 롤치즈 식빵">`,
@@ -159,6 +175,7 @@ let bread_array =[
         ingredient : ""
     },
     {
+        pid:16,
         pcate : "파이패스트리",
         name : `치즈 트위스트 스틱`,
         imgframe :`<img src="./img/menu/bread_17.jpg" alt="치즈 트위스트 스틱">`,
@@ -169,6 +186,7 @@ let bread_array =[
         ingredient : ""
     },
     {
+        pid:17,
         pcate : "도넛고로케",
         name : `츄러스 꽈배기`,
         imgframe :`<img src="./img/menu/bread_18.jpg" alt="츄러스 꽈배기">`,
@@ -179,6 +197,7 @@ let bread_array =[
     }
     ,
     {
+        pid:18,
         pcate : "도넛고로케",
         name : `NEW 김치 고로케`,
         imgframe :`<img src="./img/menu/bread_19.jpg" alt="NEW 김치 고로케">`,
@@ -204,6 +223,7 @@ let bread_array =[
 ]
 let cake_array = [
     {
+        pid:0,
         pcate : "캐릭터케이크",
         name : `헬로카봇 펜타스톰X라이프캐논`,
         imgframe :`<img src="./img/menu/cake_1.jpg" alt="헬로카봇 펜타스톰X라이프캐논">`,
@@ -213,6 +233,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:1,
         pcate : "캐릭터케이크",
         name : `카3_라이트닝맥퀸_케이크`,
         imgframe :`<img src="./img/menu/cake_2.jpg" alt="카3_라이트닝맥퀸_케이크">`,
@@ -222,6 +243,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:2,
         pcate : "캐릭터케이크",
         name : `곰돌이 푸_알럽허니`,
         imgframe :`<img src="./img/menu/cake_3.jpg" alt="곰돌이 푸_알럽허니">`,
@@ -232,6 +254,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:3,
         pcate : "캐릭터케이크",
         name : `크앙! 티라노 케이크`,
         imgframe :`<img src="./img/menu/cake_4.jpg" alt="크앙! 티라노 케이크">`,
@@ -243,6 +266,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:4,
         pcate : "캐릭터케이크",
         name : `티니핑과 슈가베리 케이크`,
         imgframe :`<img src="./img/menu/cake_5.jpg" alt="티니핑과 슈가베리 케이크">`,
@@ -253,6 +277,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:5,
         pcate : "생크림케이크",
         name : `퐁신퐁신 포실핑`,
         imgframe :`<img src="./img/menu/cake_6.jpg" alt="퐁신퐁신 포실핑">`,
@@ -261,6 +286,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:6,
         pcate : "스페셜케이크",
         name : `사르르 샤샤핑`,
         imgframe :`<img src="./img/menu/cake_7.jpg" alt="사르르 샤샤핑">`,
@@ -270,6 +296,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:7,
         pcate : "무스케이크",
         name : `사르르 티라미수 생크림 쉬폰`,
         imgframe :`<img src="./img/menu/cake_8.jpg" alt="사르르 티라미수 생크림 쉬폰">`,
@@ -279,6 +306,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:8,
         pcate : "스페셜케이크",
         name : `사르르 생크림 쉬폰`,
         imgframe :`<img src="./img/menu/cake_9.jpg" alt="사르르 생크림 쉬폰">`,
@@ -287,6 +315,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:9,
         pcate : "생크림케이크",
         name : `사르르 초코 생크림 쉬폰`,
         imgframe :`<img src="./img/menu/cake_10.jpg" alt="사르르 초코 생크림 쉬폰">`,
@@ -295,6 +324,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:10,
         pcate : "스페셜케이크",
         name : `마담 얼그레이 케이크`,
         imgframe :`<img src="./img/menu/cake_11.jpg" alt="마담 얼그레이 케이크">`,
@@ -304,6 +334,7 @@ let cake_array = [
         ingredient : ""
     },
     {
+        pid:11,
         pcate : "생크림케이크",
         name : `말차에 퐁당 딸기케이크`,
         imgframe :`<img src="./img/menu/cake_12.jpg" alt="말차에 퐁당 딸기케이크">`,
@@ -314,6 +345,7 @@ let cake_array = [
     }
 ,
     {
+        pid:12,
         pcate : "조각케이크",
         name : `클래식 오브 치즈케이크(조각)`,
         imgframe :`<img src="./img/menu/cake_13.jpg" alt="클래식 오브 치즈케이크(조각)">`,
@@ -324,6 +356,7 @@ let cake_array = [
     }
 ,
 {
+    pid:13,
     pcate : "조각케이크",
     name : `쇼콜라 갸또(조각)`,
     imgframe :`<img src="./img/menu/cake_14.jpg" alt="쇼콜라 갸또(조각)">`,
@@ -333,6 +366,7 @@ let cake_array = [
 }
 ,
 {
+    pid:14,
     pcate : "조각케이크",
     name : `까망쿠키 치즈(조각)`,
     imgframe :`<img src="./img/menu/cake_15.jpg" alt="까망쿠키 치즈(조각)">`,
@@ -341,6 +375,7 @@ let cake_array = [
 }
 ,
 {
+    pid:15,
     pcate : "조각케이크",
     name : `쁘띠 한라봉&오렌지 케이크`,
     imgframe :`<img src="./img/menu/cake_16.jpg" alt="쁘띠 한라봉&오렌지 케이크">`,
@@ -352,6 +387,7 @@ let cake_array = [
 }
 ,
 {
+    pid:16,
     pcate : "무스케이크",
     name : `고구마케이크`,
     imgframe :`<img src="./img/menu/cake_17.jpg" alt="고구마케이크">`,
@@ -362,6 +398,7 @@ let cake_array = [
 }
 ,
 {
+    pid:17,
     pcate : "무스케이크",
     name : `클래식 치즈 케이크`,
     imgframe :`<img src="./img/menu/cake_18.jpg" alt="클래식 치즈 케이크">`,
@@ -374,6 +411,7 @@ let cake_array = [
 
 ,
 {
+    pid:18,
     pcate : "대형케이크",
     name : `6호 2단 화이트케이크(다리포함)`,
     imgframe :`<img src="./img/menu/cake_19.jpg" alt="6호 2단 화이트케이크(다리포함)">`,
@@ -384,6 +422,7 @@ let cake_array = [
 }
 ,
 {
+    pid:19,
     pcate : "대형케이크",
     name : `티니핑 디저트마을`,
     imgframe :`<img src="./img/menu/cake_20.jpg" alt="티니핑 디저트마을">`,
@@ -409,6 +448,7 @@ let cake_array = [
 
 let deli_array = [
     {
+        pid:0,
         pcate : "샌드위치",
         name : `고단백 치킨페스토 곡물 샌드위치`,
         imgframe :`<img src="./img/menu/deli_1.jpg" alt="고단백 치킨페스토 곡물 샌드위치">`,
@@ -420,6 +460,7 @@ let deli_array = [
     }
 ,
     {
+        pid:1,
         pcate : "샌드위치",
         name : `라구듬뿍 치즈브리또`,
         imgframe :`<img src="./img/menu/deli_2.jpg" alt="라구듬뿍 치즈브리또">`,
@@ -430,6 +471,7 @@ let deli_array = [
     }
     ,
     {
+        pid:2,
         pcate : "샌드위치",
         name : `에그튜나 샌드위치`,
         imgframe :`<img src="./img/menu/deli_3.jpg" alt="에그튜나 샌드위치">`,
@@ -439,6 +481,7 @@ let deli_array = [
         ingredient : ""
     },
     {
+        pid:3,
         pcate : "샌드위치",
         name : `크랜베리치킨 베이글 샌드위치`,
         imgframe :`<img src="./img/menu/deli_4.jpg" alt="크랜베리치킨 베이글 샌드위치">`,
@@ -449,6 +492,7 @@ let deli_array = [
         ingredient : ""
     },
     {
+        pid:4,
         pcate : "샐러드",
         name : `불고기 분짜 누들 샐러드`,
         imgframe :`<img src="./img/menu/deli_5.jpg" alt="불고기 분짜 누들 샐러드">`,
@@ -460,6 +504,7 @@ let deli_array = [
         ingredient : ""
     },
     {
+        pid:5,
         pcate : "샐러드",
         name : `그릴치킨 오렌지 샐러드`,
         imgframe :`<img src="./img/menu/deli_6.jpg" alt="그릴치킨 오렌지 샐러드">`,
@@ -470,6 +515,7 @@ let deli_array = [
         ingredient : ""
     },
     {
+        pid:6,
         pcate : "간편식",
         name : `토마토 라구라자냐`,
         imgframe :`<img src="./img/menu/deli_7.jpg" alt="토마토 라구라자냐">`,
@@ -481,6 +527,7 @@ let deli_array = [
         ingredient : ""
     },
     {
+        pid:7,
         pcate : "간편식",
         name : `베이컨 에그 브리오쉬`,
         imgframe :`<img src="./img/menu/deli_8.jpg" alt="베이컨 에그 브리오쉬">`,
@@ -493,6 +540,7 @@ let deli_array = [
     },
 
     {
+        pid:8,
         pcate : "간편식",
         name : `트러플 크림 파스타`,
         imgframe :`<img src="./img/menu/deli_9.jpg" alt="트러플 크림 파스타">`,
@@ -511,6 +559,7 @@ let deli_array = [
 
 let dessert_array = [
     {
+        pid:0,
         pcate : "구움양과",
         name : `리얼브라우니`,
         imgframe :`<img src="./img/menu/dessert_1.jpg" alt="리얼브라우니">`,
@@ -522,6 +571,7 @@ let dessert_array = [
     },
 
     {
+        pid:1,
         pcate : "구움양과",
         name : `호두 브라우니`,
         imgframe :`<img src="./img/menu/dessert_2.jpg" alt="호두 브라우니">`,
@@ -531,6 +581,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:2,
         pcate : "구움양과",
         name : `생크림 버터 스콘`,
         imgframe :`<img src="./img/menu/dessert_3.jpg" alt="생크림 버터 스콘">`,
@@ -541,6 +592,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:3,
         pcate : "구움양과",
         name : `오리지널 까눌레`,
         imgframe :`<img src="./img/menu/dessert_4.jpg" alt="오리지널 까눌레">`,
@@ -552,6 +604,7 @@ let dessert_array = [
     },
 
     {
+        pid:4,
         pcate : "마카롱",
         name : `쿠키앤크림 뚱카롱`,
         imgframe :`<img src="./img/menu/dessert_5.jpg" alt="쿠키앤크림 뚱카롱">`,
@@ -564,6 +617,7 @@ let dessert_array = [
     },
 
     {
+        pid:5,
         pcate : "마카롱",
         name : `앙버터 뚱카롱`,
         imgframe :`<img src="./img/menu/dessert_6.jpg" alt="앙버터 뚱카롱">`,
@@ -575,6 +629,7 @@ let dessert_array = [
     },
 
     {
+        pid:6,
         pcate : "마카롱",
         name : `딸기 우유 뚱카롱`,
         imgframe :`<img src="./img/menu/dessert_7.jpg" alt="딸기 우유 뚱카롱">`,
@@ -585,6 +640,7 @@ let dessert_array = [
     },
 
     {
+        pid:7,
         pcate : "아이스크림",
         name : `기쁨이 샤인머스캣 아이스캔디`,
         imgframe :`<img src="./img/menu/dessert_8.jpg" alt="기쁨이 샤인머스캣 아이스캔디">`,
@@ -598,6 +654,7 @@ let dessert_array = [
 
 
     {
+        pid:8,
         pcate : "아이스크림",
         name : `당황이 딸기 아이스캔디`,
         imgframe :`<img src="./img/menu/dessert_9.jpg" alt="당황이 딸기 아이스캔디">`,
@@ -613,6 +670,7 @@ let dessert_array = [
 
 
     {
+        pid:9,
         pcate : "아이스크림",
         name : `나뚜루 바닐라&아몬드바`,
         imgframe :`<img src="./img/menu/dessert_10.jpg" alt="나뚜루 바닐라&아몬드바">`,
@@ -624,6 +682,7 @@ let dessert_array = [
     },
 
     {
+        pid:10,
         pcate : "아이스크림",
         name : `라라스윗 초콜릿 모나카`,
         imgframe :`<img src="./img/menu/dessert_11.jpg" alt="라라스윗 초콜릿 모나카">`,
@@ -634,6 +693,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:11,
         pcate : "초콜릿캔디",
         name : `소프트 초콜릿`,
         imgframe :`<img src="./img/menu/dessert_12.jpg" alt="소프트 초콜릿">`,
@@ -645,6 +705,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:12,
         pcate : "초콜릿캔디",
         name : `소프트 초콜릿`,
         imgframe :`<img src="./img/menu/dessert_13.jpg" alt="포실포실 솜사탕">`,
@@ -655,6 +716,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:13,
         pcate : "초콜릿캔디",
         name : `헬로카봇 젤리스틱 (사파리세이버)`,
         imgframe :`<img src="./img/menu/dessert_14.jpg" alt="헬로카봇 젤리스틱 (사파리세이버)">`,
@@ -666,6 +728,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:14,
         pcate : "초콜릿캔디",
         name : `캐빈디쉬 병캔디`,
         imgframe :`<img src="./img/menu/dessert_15.jpg" alt="캐빈디쉬 병캔디">`,
@@ -677,6 +740,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:15,
         pcate : "잼스프레드",
         name : `뚜레쥬르가 만든 딸기잼 120g`,
         imgframe :`<img src="./img/menu/dessert_16.jpg" alt="뚜레쥬르가 만든 딸기잼 120g">`,
@@ -687,6 +751,7 @@ let dessert_array = [
         ingredient : ""
     },
     {
+        pid:16,
         pcate : "잼스프레드",
         name : `간편하게 발라먹는 앙버터 스프레드`,
         imgframe :`<img src="./img/menu/dessert_17.jpg" alt="간편하게 발라먹는 앙버터 스프레드">`,
@@ -705,6 +770,7 @@ let dessert_array = [
 
 let drink_array = [
     {
+        pid:0,
         pcate : "커피",
         name : `원샷! 아샷추`,
         imgframe :`<img src="./img/menu/drink_1.jpg" alt="원샷! 아샷추">`,
@@ -716,6 +782,7 @@ let drink_array = [
         ingredient : ""
     },
     {
+        pid:1,
         pcate : "커피",
         name : `꿀꺽꿀꺽! 꿀메리카노`,
         imgframe :`<img src="./img/menu/drink_2.jpg" alt="꿀꺽꿀꺽! 꿀메리카노">`,
@@ -725,6 +792,7 @@ let drink_array = [
         ingredient : ""
     },
     {
+        pid:2,
         pcate : "커피",
         name : `그랑드카페 콜드브루 보틀(원액)`,
         imgframe :`<img src="./img/menu/drink_3.jpg" alt="그랑드카페 콜드브루 보틀(원액)">`,
@@ -736,6 +804,7 @@ let drink_array = [
         ingredient : ""
     },
     {
+        pid:3,
         pcate : "블랜디드",
         name : `사르르 딸기 쉐이크`,
         imgframe :`<img src="./img/menu/drink_4.jpg" alt="사르르딸기쉐이크">`,
@@ -746,6 +815,7 @@ let drink_array = [
         ingredient : ""
     },
     {
+        pid:4,
         pcate : "블랜디드",
         name : `사르르 우유 쉐이크`,
         imgframe :`<img src="./img/menu/drink_5.jpg" alt="사르르 우유 쉐이크">`,
@@ -758,6 +828,7 @@ let drink_array = [
     },
 
     {
+        pid:5,
         pcate : "과일주스에이드",
         name : `자몽 에이드`,
         imgframe :`<img src="./img/menu/drink_6.jpg" alt="자몽 에이드">`,
@@ -769,6 +840,7 @@ let drink_array = [
     },
 
     {
+        pid:6,
         pcate : "과일주스에이드",
         name : `레몬 에이드`,
         imgframe :`<img src="./img/menu/drink_7.jpg" alt="레몬 에이드">`,
@@ -779,6 +851,7 @@ let drink_array = [
         ingredient : ""
     },
     {
+        pid:7,
         pcate : "티라떼",
         name : `유자레몬티`,
         imgframe :`<img src="./img/menu/drink_8.jpg" alt="유자레몬티">`,
@@ -791,6 +864,7 @@ let drink_array = [
     },
 
     {
+        pid:8,
         pcate : "티라떼",
         name : `핫 초코`,
         imgframe :`<img src="./img/menu/drink_9.jpg" alt="핫 초코">`,
@@ -802,6 +876,7 @@ let drink_array = [
     },
 
     {
+        pid:9,
         pcate : "티라떼",
         name : `딸기라떼`,
         imgframe :`<img src="./img/menu/drink_10.jpg" alt="딸기라떼">`,
@@ -813,6 +888,7 @@ let drink_array = [
 
 
     {
+        pid:10,
         pcate : "우유병음료",
         name : `곰돌이 푸_신선한 우유`,
         imgframe :`<img src="./img/menu/drink_11.jpg" alt="곰돌이 푸_신선한 우유">`,
@@ -824,6 +900,7 @@ let drink_array = [
         ingredient : ""
     },
     {
+        pid:11,
         pcate : "우유병음료",
         name : `산 펠레그리노(500ML)`,
         imgframe :`<img src="./img/menu/drink_12.jpg" alt="산 펠레그리노">`,
@@ -834,9 +911,6 @@ let drink_array = [
 `,
         ingredient : ""
     }
-
-
-
 
 
 

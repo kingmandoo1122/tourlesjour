@@ -47,6 +47,27 @@ body.scroll{
     font-size:20px;
 }
 
+.sub_date{
+    opacity: 0;
+    animation: sub_date_move 1s ease 0.1s forwards;
+}
+
+@keyframes sub_date_move {
+    0%{opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    
+}
+
+
+
+
+
 .sub_date_div br{
     display: none;
 }
@@ -392,6 +413,16 @@ td.greendeco::before{
     padding:50px 0;
     
 }
+.sub_advice .inner_contents p.subsmallft br{
+    display: none
+}
+
+
+
+
+
+
+
 .black_cover_ver3{
     position: absolute;
     top:0;
@@ -636,6 +667,7 @@ input[type="submit"]{
 } */
 
 
+
 .sub_faq_ul{
     margin-top: 100px;
     display: flex;
@@ -646,6 +678,7 @@ input[type="submit"]{
     height: 55px;
     overflow: hidden;
     transition: all 0.7s ease 0s;
+    margin-bottom:10px;
 }
 .sub_faq_ul >li>dl{
     padding-bottom:20px;
@@ -861,6 +894,64 @@ input[id="person"]{
 .submit_franchise.show{
     display: block;
 }
+
+
+
+
+
+
+
+/* 스크롤 */
+
+
+.opacity_ani{
+    opacity: 0;
+    transition: all 0.7s ease 0s;
+}
+.opacity_ani.on{
+    opacity: 1;
+}
+
+
+
+
+
+.up_to_down_1{
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    transform: translateY(-30%);
+}
+
+.up_to_down_1.on{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.up_to_down_2{
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    transform: translateY(-20%);
+}
+
+.up_to_down_2.on{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.up_to_down_3{
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    transform: translateY(-10%);
+}
+
+.up_to_down_3.on{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 
 
 

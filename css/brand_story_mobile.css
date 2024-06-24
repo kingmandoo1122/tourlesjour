@@ -1,133 +1,32 @@
 @media (max-width:767px) {
 
-    /* 메뉴영역 */
+
+
+
+
+    .sub_brand_story{
+        animation: sub_brand_story_move 1s ease 0.1s forwards;
+        opacity: 0;
+    }
     
-/* .navigation_sec>.inner_contents{
-    display: flex;
-}
-.navigation_sec.top{
-    height: 73px;
-    position: fixed;
-    width: 100%;
-    z-index: 10000;
-    color: white;
-    background: #005C35;
-}
-
-.navigation_sec:hover .nav_line {
-    opacity: 1;    
-} */
-/* 
-nav{
-    display: flex;
-    top:100%;
-    width: 100%;
-    position: absolute;
-    left:100%;
-    background: white;
-    color:#000;
-    height: 100vh;
-    transition: all 0.5s ease-in-out 0s;
-}
-.logo>a{
-    align-items: center;
-    display: flex;
-    height: 80px;
-    width: 90%;
-}
-nav>ul{
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    position: relative;
-    padding: 15px;
-    font-size: 18px;
-    width: 100%;
-    padding-top:100px;
-}
-nav>ul>li.on>a{
-    color:#005C35
-}
-nav>ul>li{
-    height: 7%;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-    font-weight: 600;
-
-}
 
 
-nav>ul>li.on>ul{
-    opacity: 1;
-    pointer-events: auto;
+    @keyframes sub_brand_story_move {
+        0%{opacity: 0;
+            transform: translateY(50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
     
-}
-nav>ul>li>a{
-    height: 50px;
-    width: 36%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-nav>ul>li>ul{
-    z-index: 100;
-    opacity: 0;
-    top:14%;
-    left:55%;
-    position: absolute;
-    font-size: 16px;
-    font-weight: 500;
-    width: 50%;
-    transition: all 0.3s ease 0s;
-    pointer-events: none;
-}
-.open_menu_btn{
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    position: absolute;
-    right: 5%;
-    top: calc(50% - 12.5px);
-    background: url(../img/menu_bar.svg) no-repeat 50% 50% / cover;
-    transition: all 0.3s ease 0s;
-}
-
-.close_menu_btn{
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 5%;
-    top: calc(50% - 12.5px);
-    background: url(../img/menu_close.svg) no-repeat 50% 50% / cover;
-    opacity: 0;
-    transition: all 0.3s ease 0s;
-}
+        
+    }
+    
+    
 
 
-.wheat_cover{
-    position: absolute;
-    width: 55%;
-    top: 0;
-    right: 0%;
-    height: 100%;
-    background: rgba(218, 209, 196, 0.3) ;
-}
 
-nav>ul>li>ul>li{
-    margin:8px 0;
-}
-
-nav>ul>li>ul>li>a{
-display: flex;
-height: 37px;
-align-items: center;
-justify-content: flex-start;
-}
-
- */
 
 .sub_brand_story .inner_contents{
     padding-top:50px;
@@ -169,6 +68,30 @@ justify-content: flex-start;
 }
 
 
+
+
+.sub_health_taste .opacity_ani{
+
+    transition: all 1s ease 0s;
+}
+
+
+.opacity_ani{
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.opacity_ani.on{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
 .health_content h3{
     font-size: 22px;
     color:rgba(0, 0, 0, 0.8);
@@ -201,6 +124,21 @@ justify-content: flex-start;
 .sub_global_top{
     background: #005C35;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sub_global_top img{
     width: 80%;
@@ -493,7 +431,17 @@ justify-content: flex-start;
 
 
 
+/* 스크롤 이벤트 */
+.sub_down_to_up_event{
+    opacity: 0;
+    transition: all 1s ease 0s;
+    transform: translateY(50px);
+}
 
+.sub_down_to_up_event.on{
+    opacity: 1;
+    transform: translate(0);
+}
 
 
 

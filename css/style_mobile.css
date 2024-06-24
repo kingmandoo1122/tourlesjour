@@ -523,7 +523,7 @@ width: 100%;
 }
 
 .discount_sec .btn{
-    top: 205%;
+    top: 195%;
     position: relative;
     color: #000;
     border: 1px solid #000;
@@ -883,5 +883,58 @@ div.card_list{
 .foot_sec_bottom_div>*{
     padding-right:5px;
 }
+
+
+
+
+.down_to_up_event{
+    opacity: 0;
+    transition: all 1s ease 0s;
+    transform: translateY(50px);
+}
+
+.down_to_up_event.on{
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+.down_to_up_event_sub{
+    opacity: 0;
+    transition: all 1s ease 0.2s;
+    transform: translateY(50px);
+}
+
+.down_to_up_event_sub.on{
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+.news_station.down_to_up_event_sub{
+    opacity: 0;
+    transition: all 1s ease 0.3s;
+    transform: translateY(50px);
+}
+
+
+.news_station.down_to_up_event_sub.on{
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

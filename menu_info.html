@@ -41,13 +41,13 @@
                                 <li><a href="franchise.html">가맹점 안내</li></a>
                             </ul>
                         </li>
-                        <li class="on"><a href="menu.html">제품 안내</a>
+                        <li class="on"><a href="menu.html?tab=0">제품 안내</a>
                             <ul>
-                                <li><a href="menu.html">신제품</a></li>
-                                <li><a href="menu.html">빵</a></li>
-                                <li><a href="menu.html">케이크</a></li>
-                                <li><a href="menu.html">디저트 & 스낵</a></li>
-                                <li><a href="menu.html">음료</a></li>
+                                <li><a href="menu.html?tab=0">빵</a></li>
+                                <li><a href="menu.html?tab=1">케이크</a></li>
+                                <li><a href="menu.html?tab=2">델리</a></li>
+                                <li><a href="menu.html?tab=3">디저트 & 스낵</a></li>
+                                <li><a href="menu.html?tab=4">음료</a></li>
                             </ul>
                         </li>
                         <li><a href="event.html">이벤트</a>
@@ -98,13 +98,13 @@
                                 <li><a href="franchise.html">가맹점 안내</li></a>
                             </ul>
                         </li>
-                        <li class="on"><a href="menu.html">제품 안내</a>
+                        <li class="on"><a href="menu.html?tab=0">제품 안내</a>
                             <ul>
-                                <li><a href="menu.html">신제품</a></li>
-                                <li><a href="menu.html">빵</a></li>
-                                <li><a href="menu.html">케이크</a></li>
-                                <li><a href="menu.html">디저트 & 스낵</a></li>
-                                <li><a href="menu.html">음료</a></li>
+                                <li><a href="menu.html?tab=0">빵</a></li>
+                                <li><a href="menu.html?tab=1">케이크</a></li>
+                                <li><a href="menu.html?tab=2">델리</a></li>
+                                <li><a href="menu.html?tab=3">디저트 & 스낵</a></li>
+                                <li><a href="menu.html?tab=4">음료</a></li>
                             </ul>
                         </li>
                         <li><a href="event.html">이벤트</a>
@@ -134,8 +134,8 @@
     <section class="sub_category">
         <div class="inner_contents">
             <p>
-                <a href="#">홈</a> &middot;
-                <a href="#">제품 안내</a>&middot;
+                <a href="index.html">홈</a> &middot;
+                <a href="menu.html?tab=0">제품 안내</a>&middot;
                 <a class="point" href="#">빵</a>
             </p>
         </div>
@@ -219,5 +219,45 @@
     </footer>
     <script src="./js/common_mobile.js"></script>
     <script src="./js/menu.js"></script>
+    <script>
+
+        function getQueryParam(param){
+            let urlparams = new URLSearchParams(window.location.search);
+            return urlparams.get(param)
+        }
+    
+
+    document.addEventListener("DOMContentLoaded",function(){
+        let pid = getQueryParam("pid")
+        let tab = getQueryParam("tab")
+
+        console.log(pid,tab)
+
+    //     let tab = getQueryParam('tab')
+    //     console.log(tab)
+    fillDetailPro(tab,pid)
+    
+
+    })
+
+    function fillDetailPro(cateNum1,detailproNum){
+        let menu_img = document.querySelector(".menu_img>h1")
+        let menu_name = document.querySelector(".menu_info>.name")
+        let menu_info = document.querySelector(".menu_info>.info")
+        let ingredient = document.querySelector(".menu_info>.ingredient")
+        let allergy = document.querySelector(".menu_info>.allergy")
+    
+        menu_img.innerHTML = `${product_array[cateNum1][detailproNum].imgframe}`
+        menu_name.innerHTML =`${product_array[cateNum1][detailproNum].name}`
+        menu_info.innerHTML =`${product_array[cateNum1][detailproNum].info}`
+        ingredient.innerHTML =`${product_array[0][0].ingredient}`
+        allergy.innerHTML =`${product_array[0][0].allergy}`
+    }
+
+    
+
+
+
+    </script>
 </body>
 </html>
