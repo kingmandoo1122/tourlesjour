@@ -130,8 +130,11 @@ window.addEventListener("scroll",function(){
     let ani_per = distance / ani_length *100 //0~99
     let cur_line = document.querySelector(".cur_line")
     let opacity_ani =document.querySelectorAll(".opacity_ani")
-    console.log(ani_length)
+    // console.log(ani_length)
 
+    let dot_line_2n = document.querySelectorAll(".history_ol>li:nth-of-type(2n)>h5")
+    let dot_line_2n_1 = document.querySelectorAll(".history_ol>li:nth-of-type(2n-1)>h5")
+    
 
     // console.log(ani_per)
 
@@ -176,6 +179,7 @@ window.addEventListener("scroll",function(){
         elv.classList.remove("bottom")
         train.style.transform = `translateY(0%)`
         cur_line.style.height = `5%`
+        dot_line_2n_1[0].classList.remove("fill")
     }
 
 
@@ -184,6 +188,44 @@ window.addEventListener("scroll",function(){
         elv.classList.remove("bottom")
         train.style.transform = `translateY(${ani_per * -0.8}%)`
         cur_line.style.height = `${10 + ani_per}%`
+        console.log(distance)
+
+        if(distance>10 && distance < 131 ){
+            dot_line_2n_1[0].classList.remove("fill")
+        }
+
+        if(distance>131 && distance < 766 ){
+            dot_line_2n_1[0].classList.add("fill")
+            dot_line_2n[0].classList.remove("fill")
+        }
+        if(distance>766 && distance < 1448 ){
+            dot_line_2n[0].classList.add("fill")
+            dot_line_2n_1[1].classList.remove("fill")
+        }
+        if(distance>1448 && distance < 1813 ){
+            dot_line_2n_1[1].classList.add("fill")
+            dot_line_2n[1].classList.remove("fill")
+        }
+        if(distance>1813 && distance < 2405 ){
+            dot_line_2n[1].classList.add("fill")
+            dot_line_2n_1[2].classList.remove("fill")
+        }
+        if(distance>2405 && distance < 2790 ){
+            dot_line_2n_1[2].classList.add("fill")
+            dot_line_2n[2].classList.remove("fill")
+        }
+        if(distance>2790 && distance < 3531 ){
+            dot_line_2n[2].classList.add("fill")
+            dot_line_2n_1[3].classList.remove("fill")
+        }
+        if(distance>3531 && distance < 4220 ){
+            dot_line_2n_1[3].classList.add("fill")
+            dot_line_2n[3].classList.remove("fill")
+        }
+        if(distance>4220 && distance < 4925){
+            dot_line_2n[3].classList.add("fill")
+        }
+
 
 
     }
@@ -191,7 +233,18 @@ window.addEventListener("scroll",function(){
         elv.classList.add("bottom")
         elv.classList.remove("fixed")
         train.style.transform = `100%`
+        dot_line_2n[3].classList.add("fill")
     }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -211,14 +264,6 @@ window.addEventListener("scroll",function(){
 
 
 })
-
-
-
-
-
-
-
-
 
 
 

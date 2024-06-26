@@ -15,6 +15,126 @@ window.onload = function(){
     let card_ul2 = document.querySelector(".card_ul2")
 
 
+
+
+    let content = [
+        "현재 사이트는 실제 사이트가 아니며",
+        "TOUS les JOURS 사이트를 리디자인한 사이트입니다.",
+        "메인, 브랜드 스토리, 브랜드스토리 - 뉴스&공지사항,",
+        "가맹 안내, 제품 안내, 이벤트 페이지를 제작하였습니다.",
+        "768px - 1023px 태블릿 버전과",
+        "767 이하의 모바일 버전의 반응형 페이지도 확인해 보실 수 있습니다."
+
+    ]
+
+    let txtframe = document.querySelectorAll(".enter_popup_txtframe>span")
+
+    let i_list = [0,0,0,0,0,0]
+    
+    setTimeout(function(){
+
+
+        setInterval(function(){
+            if (i_list[0] < content[0].length) {
+            let txt = content[0].charAt(i_list[0]);
+            txtframe[0].innerHTML += txt;
+            i_list[0]++;
+            }
+        },50)
+
+
+    },500)
+
+    
+
+    setTimeout(function(){
+        setInterval(function(){
+            if (i_list[1] < content[1].length) {
+            let txt = content[1].charAt(i_list[1]);
+            txtframe[1].innerHTML += txt;
+            i_list[1]++;
+            }
+        },50)
+    },2000)
+    
+
+    setTimeout(function(){
+        setInterval(function(){
+            if (i_list[2] < content[1].length) {
+            let txt = content[2].charAt(i_list[2]);
+            txtframe[2].innerHTML += txt;
+            i_list[2]++;
+            }
+        },50)
+    },6500)
+    
+
+
+    setTimeout(function(){
+        setInterval(function(){
+            if (i_list[3] < content[1].length) {
+            let txt = content[3].charAt(i_list[3]);
+            txtframe[3].innerHTML += txt;
+            i_list[3]++;
+            }
+        },50)
+    },9000)
+    
+
+
+    setTimeout(function(){
+        setInterval(function(){
+            if (i_list[4] < content[4].length) {
+            let txt = content[4].charAt(i_list[4]);
+            txtframe[4].innerHTML += txt;
+            i_list[4]++;
+            }
+        },50)
+    },13000)
+
+    
+    setTimeout(function(){
+        setInterval(function(){
+            if (i_list[5] < content[5].length) {
+            let txt = content[5].charAt(i_list[5]);
+            txtframe[5].innerHTML += txt;
+            i_list[5]++;
+            }
+        },50)
+    },15500)
+
+
+
+
+
+//  function typing(content,txtframe){
+//     setInterval(function(){
+//         if (i_list[0] < content.length) {
+//         let txt = content.charAt(i_list[0]);
+//         txtframe.innerHTML += txt;
+//         i_list[0]++;
+//         }
+//     },80)
+//  }
+
+
+// typing(content[0],txtframe[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // 카드 리스트들의 a태그 이벤트 없애기
     for(let i=0;i<card_list.length;i++){
         card_list[i].addEventListener("click",function(e){

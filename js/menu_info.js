@@ -1,17 +1,3 @@
-
-    // document.addEventListener("DOMContentLoaded", function() {
-    //     let copy = document.querySelector(".copy")
-
-    //     let url 
-    //     copy.addEventListener("click", function() {
-    //         url = window.location.href;
-    //         navigator.clipboard.writeText(url).then(() => {
-    //             alert("현재 페이지 주소가 복사되었습니다.");
-    //         }).catch(err => {
-    //             console.error('URL 복사 실패:', err);
-    //         });
-    //     });
-    // });
     document.addEventListener("DOMContentLoaded", function() {
         let copy = document.querySelector(".copy");
         copy.addEventListener("click",function(){
@@ -24,7 +10,7 @@
                 });
         })
 
-
+        let shareButton = document.querySelector("a.share")
         if (shareButton) {
             shareButton.addEventListener("click", function() {
                 var url = window.location.href;

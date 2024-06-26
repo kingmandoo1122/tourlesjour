@@ -167,6 +167,144 @@ nav>ul>li>ul>li{
 
 
 
+/* enter popup */
+
+
+.enter_popup_modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 50000;
+}
+
+
+
+.enter_popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    color:#fff;
+    z-index: 50001;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.enter_popup_txtframe{
+    width: 850px;
+    height: 450px;
+    
+}
+
+
+
+.enter_popup_txtframe>p{
+    position: relative;
+    white-space: nowrap;
+}
+.enter_popup_txtframe>p:nth-of-type(2n){
+    margin-bottom:50px
+}
+
+
+.typing_cursor{
+    opacity: 0;
+}
+
+.typing_cursor_1{
+    animation: typing_flash 0.5s ease 4  ;
+}
+
+
+.typing_cursor_2{
+    animation: typing_flash 0.5s ease 8  ;
+    animation-delay: 2.5s;
+}
+
+.typing_cursor_3{
+    animation: typing_flash 0.5s ease 5  ;
+    animation-delay: 6.5s;
+}
+
+.typing_cursor_4{
+    animation: typing_flash 0.5s ease 8  ;
+    animation-delay: 9s;
+}
+
+.typing_cursor_5{
+    animation: typing_flash 0.5s ease 5  ;
+    animation-delay: 13s;
+}
+
+.typing_cursor_6{
+    animation: typing_flash 0.5s ease 8  ;
+    animation-delay: 15.5s;
+}
+
+
+
+
+
+@keyframes typing_flash {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* .enter_popup_txtframe>p:nth-of-type(1){
+    min-width: 50px;
+    width: 448px;
+    overflow: hidden;
+    color:transparent
+}
+
+
+.enter_popup_txtframe>p:nth-of-type(1)::before{
+    position: absolute;
+    top:0;
+    left:0;
+    content: '현재 사이트는 실제 사이트가 아니며';
+    color:#fff;
+    border-right: 1px solid #fff;
+    animation: typing_ani 3s steps(35) forwards;
+    width: 0%;
+    overflow: hidden;
+}
+
+
+
+@keyframes typing_ani {
+    0%{width: 0%;}
+    99%{
+        border-right: 1px solid #fff;
+    }
+    100%{width: 100%;
+    border-right:none;}
+}
+ */
+
+
+
+
+
+
+
 
 
 
