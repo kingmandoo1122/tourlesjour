@@ -27,6 +27,40 @@ window.onload = function(){
 // 창업 섹션 공통 자바스크립트
 
 
+open_submit_franchise.addEventListener("click",function(e){
+    let viewportwidth = window.innerWidth
+    e.preventDefault()
+
+    if (matchMedia("screen and (max-width: 768px)").matches) {
+        window.open(this.href, `_blank`, `width=${viewportwidth}, height=1000`);
+    return false;
+    }
+    else{
+        window.open(this.href, `_blank`, `width=1200, height=1000`);
+    return false;
+    }
+    
+
+})
+
+open_submit_date.addEventListener("click",function(e){
+    let viewportwidth = window.innerWidth
+    e.preventDefault()
+
+    if (matchMedia("screen and (max-width: 768px)").matches) {
+        window.open(this.href, `_blank`, `width=${viewportwidth}, height=1000`);
+    return false;
+    }
+    else{
+        window.open(this.href, `_blank`, `width=1200, height=1000`);
+    return false;
+    }
+    
+
+})
+
+
+
 
 sub_faq_ul_li[0].style.height = `${sub_faq_ul_dl[0].offsetHeight}px`
 

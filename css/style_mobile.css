@@ -800,8 +800,8 @@ div.card_list{
 .searchstore_sec .inner_contents>p:nth-of-type(1)::before{
     content: '';
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 30%;
+    height: 140%;
     background: url(../img/store.svg) no-repeat 50% 50% / contain;
     top: -260%;
     left: calc(50% - 35px);
@@ -813,7 +813,7 @@ div.card_list{
     width: 261px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     padding-bottom: 5px;
-    margin-top: 30px
+    margin-top: 30px;
 }
 #search{
     font-size: 20px;
@@ -855,7 +855,6 @@ div.card_list{
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    justify-content: space-between;
 }
 /* #family_site{
     color: white;
