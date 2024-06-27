@@ -27,8 +27,12 @@ window.onload = function(){
 
     ]
 
-    let txtframe = document.querySelectorAll(".enter_popup_txtframe>span")
+    for(let i=0;i<content.length;i++){
+        console.log(content[i].length)
+    }
 
+
+    let txtframe = document.querySelectorAll(".enter_popup_txtframe>span")
     let i_list = [0,0,0,0,0,0]
     
     setTimeout(function(){
@@ -40,10 +44,10 @@ window.onload = function(){
             txtframe[0].innerHTML += txt;
             i_list[0]++;
             }
-        },50)
+        },30)
 
 
-    },500)
+    },200)
 
     
 
@@ -54,9 +58,10 @@ window.onload = function(){
             txtframe[1].innerHTML += txt;
             i_list[1]++;
             }
-        },50)
-    },2000)
+        },30)
+    },770)
     
+
 
     setTimeout(function(){
         setInterval(function(){
@@ -65,8 +70,8 @@ window.onload = function(){
             txtframe[2].innerHTML += txt;
             i_list[2]++;
             }
-        },50)
-    },6500)
+        },30)
+    },2260)
     
 
 
@@ -77,8 +82,8 @@ window.onload = function(){
             txtframe[3].innerHTML += txt;
             i_list[3]++;
             }
-        },50)
-    },9000)
+        },30)
+    },3160)
     
 
 
@@ -89,8 +94,8 @@ window.onload = function(){
             txtframe[4].innerHTML += txt;
             i_list[4]++;
             }
-        },50)
-    },13000)
+        },30)
+    },4590)
 
     
     setTimeout(function(){
@@ -100,38 +105,124 @@ window.onload = function(){
             txtframe[5].innerHTML += txt;
             i_list[5]++;
             }
-        },50)
-    },15500)
+        },30)
+    },5250)
 
 
 
 
+let timer = document.querySelector(".timer")
+let timer_flash =document.querySelector("timer.flash")
+let timer_count = 5
+let timeinterval
+let pause = document.querySelector(".pause")
+let play = document.querySelector(".play")
+let current_count = 0
+let enter_popup = document.querySelector(".enter_popup")
+let enter_popup_modal = document.querySelector(".enter_popup_modal")
 
-//  function typing(content,txtframe){
-//     setInterval(function(){
-//         if (i_list[0] < content.length) {
-//         let txt = content.charAt(i_list[0]);
-//         txtframe.innerHTML += txt;
-//         i_list[0]++;
-//         }
-//     },80)
-//  }
+    function startcountdown(){
+        timeinterval = setInterval(function(){
+            timer_count --
+            timer.innerHTML = `${timer_count}`
+            current_count = timer_count
+            if(timer_count <= 0){
+                enter_popup.style.opacity = `0`
+                enter_popup.style.pointerEvents = `none`
+                enter_popup_modal.style.opacity = `0`
+                enter_popup_modal.style.pointerEvents = `none`
+            clearInterval(timeinterval)
+            dontsee1hour()
+            }
+        },1000)
+
+    }
+
+    setTimeout(function(){
+        startcountdown()
+    },7000)
 
 
-// typing(content[0],txtframe[0])
+    pause.addEventListener("click",function(e){
+        e.preventDefault()
+       clearInterval(timeinterval)
+       timer.classList.add("aninone")
+       timer.classList.remove("reload")
+       timer.style.opacity = `1`
+       pause.style.display =`none`
+       play.style.display =`block`
+    })
+
+    play.addEventListener("click",function(e){
+        e.preventDefault()
+        startcountdown()
+        timer.classList.remove("aninone")
+        timer.classList.add("reload")
+        timer.style.opacity = `0`
+        play.style.display =`none`
+        pause.style.display =`block`
+
+    })
+
+
+
+        function dontsee1hour(){
+            const HIDE_DURATION = 3600 * 1000; // 1시간 (밀리초)
+          
+            // 페이지 로드 시 localStorage에서 시간을 확인
+            const hideUntil = localStorage.getItem('hideUntil');
+            const now = new Date().getTime();
+          
+            if (hideUntil && now < hideUntil) {
+              enter_popup.style.display = 'none';
+              enter_popup_modal.style.display = `none`
+            }
+          
+            if(checkbox_input.checked){
+                console.log("ggg")
+                let hideUntilTime = now + HIDE_DURATION;
+                localStorage.setItem('hideUntil', hideUntilTime);
+            }
+            
+        }
+  
+        const HIDE_DURATION = 3600 * 1000; // 1시간 (밀리초)
+          
+            // 페이지 로드 시 localStorage에서 시간을 확인
+            const hideUntil = localStorage.getItem('hideUntil');
+            const now = new Date().getTime();
+          
+            if (hideUntil && now < hideUntil) {
+              enter_popup.style.display = 'none';
+              enter_popup_modal.style.display = `none`
+            }
+      
 
 
 
 
+        let checkbox_label = document.querySelector('.custom_checkbox_label');
+        let checkbox_input = document.querySelector("#checking")
+        let checkbox_view = document.querySelector("#checking_view")
+        checkbox_label.addEventListener('click', function() {
+            checkbox_input.checked = !checkbox_input.checked;
+            checkbox_input.dispatchEvent(new Event('change'));
+        });
+
+        checkbox_view.addEventListener('click', function() {
+            checkbox_input.checked = !checkbox_input.checked;
+            checkbox_input.dispatchEvent(new Event('change'));
+        });
 
 
 
+        // function check(){
+        //     if(checkbox_input.checked){
+        //         dontsee1hour()
+        //     }
+        // }
 
-
-
-
-
-
+        
 
 
 

@@ -437,7 +437,9 @@ tr.title>th:nth-of-type(2){
         border-bottom:1px solid #b1b1b1;;
     }
     
-    
+    tr>*:nth-of-type(1){
+        display: none;
+    }
     tr>td{
         padding:15px 0;
         font-size: 13px;
@@ -519,7 +521,7 @@ tr.title>th:nth-of-type(2){
     }
     
     input[id="searchtxt"]{
-        width: 74%;
+        width: 73%;
         margin-left: auto;
         padding: 5px 0px 5px 5px;
         margin-right: 10px;
