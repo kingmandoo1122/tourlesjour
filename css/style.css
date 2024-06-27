@@ -331,7 +331,6 @@ nav>ul>li>ul>li{
         opacity: 1;
     }
     }
-}
 
 .checking_area{
     display: flex;
@@ -357,7 +356,6 @@ label[for="checking_view"]{
 
 
 
-
 .checkbox::after{
     content: '';
     position: absolute;
@@ -373,9 +371,6 @@ label[for="checking_view"]{
 input[type="checkbox"]:checked + .checkbox::after {
     transform:scale(1);
   }
-
-
-
 
 
 
@@ -418,10 +413,6 @@ input[type="checkbox"]:checked + .checkbox::after {
     border-right:none;}
 }
  */
-
-
-
-
 
 
 
