@@ -179,8 +179,7 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
               enter_popup_modal.style.display = `block`
             }
           
-            if(checkbox_input.checked){
-                console.log("ggg")
+            if(checkbox_input.checked){ 
                 let hideUntilTime = now + HIDE_DURATION;
                 localStorage.setItem('hideUntil', hideUntilTime);
             }
@@ -200,6 +199,10 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
       
 
 
+
+
+
+            
 
 
         let checkbox_label = document.querySelector('.custom_checkbox_label');
