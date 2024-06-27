@@ -177,9 +177,13 @@ nav>ul>li>ul>li{
 
 
 
+.enter_popup{
+    display: none !important;
+}
 
-
-
+.enter_popup_modal{
+    display: none !important;
+}
 
 
 

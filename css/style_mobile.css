@@ -224,11 +224,13 @@ width: 100%;
 
 
 
+.enter_popup{
+    display: none !important;
+}
 
-
-
-
-
+.enter_popup_modal{
+    display: none !important;
+}
 
 
 

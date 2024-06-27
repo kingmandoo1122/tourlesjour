@@ -47,7 +47,7 @@ window.onload = function(){
         },30)
 
 
-    },200)
+    },1200)
 
     
 
@@ -59,7 +59,7 @@ window.onload = function(){
             i_list[1]++;
             }
         },30)
-    },770)
+    },1770)
     
 
 
@@ -71,7 +71,7 @@ window.onload = function(){
             i_list[2]++;
             }
         },30)
-    },2260)
+    },3260)
     
 
 
@@ -83,7 +83,7 @@ window.onload = function(){
             i_list[3]++;
             }
         },30)
-    },3160)
+    },4160)
     
 
 
@@ -95,7 +95,7 @@ window.onload = function(){
             i_list[4]++;
             }
         },30)
-    },4590)
+    },5590)
 
     
     setTimeout(function(){
@@ -106,20 +106,21 @@ window.onload = function(){
             i_list[5]++;
             }
         },30)
-    },5250)
+    },6250)
 
 
 
 
 let timer = document.querySelector(".timer")
 let timer_flash =document.querySelector("timer.flash")
-let timer_count = 5
+let timer_count = 10
 let timeinterval
 let pause = document.querySelector(".pause")
 let play = document.querySelector(".play")
 let current_count = 0
 let enter_popup = document.querySelector(".enter_popup")
 let enter_popup_modal = document.querySelector(".enter_popup_modal")
+
 
     function startcountdown(){
         timeinterval = setInterval(function(){
@@ -167,15 +168,15 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
 
 
         function dontsee1hour(){
-            const HIDE_DURATION = 3600 * 1000; // 1시간 (밀리초)
+            let HIDE_DURATION = 3600 * 1000; // 1시간 (밀리초)
           
             // 페이지 로드 시 localStorage에서 시간을 확인
-            const hideUntil = localStorage.getItem('hideUntil');
-            const now = new Date().getTime();
+            let hideUntil = localStorage.getItem('hideUntil');
+            let now = new Date().getTime();
           
-            if (hideUntil && now < hideUntil) {
-              enter_popup.style.display = 'none';
-              enter_popup_modal.style.display = `none`
+            if (!(hideUntil && now < hideUntil)) {
+              enter_popup.style.display = 'flex';
+              enter_popup_modal.style.display = `block`
             }
           
             if(checkbox_input.checked){
@@ -186,15 +187,15 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
             
         }
   
-        const HIDE_DURATION = 3600 * 1000; // 1시간 (밀리초)
+        let HIDE_DURATION = 3600 * 1000; // 1시간 (밀리초)
           
             // 페이지 로드 시 localStorage에서 시간을 확인
-            const hideUntil = localStorage.getItem('hideUntil');
-            const now = new Date().getTime();
+            let hideUntil = localStorage.getItem('hideUntil');
+            let now = new Date().getTime();
           
-            if (hideUntil && now < hideUntil) {
-              enter_popup.style.display = 'none';
-              enter_popup_modal.style.display = `none`
+            if (!(hideUntil && now < hideUntil)) {
+              enter_popup.style.display = 'flex';
+              enter_popup_modal.style.display = `block`
             }
       
 
