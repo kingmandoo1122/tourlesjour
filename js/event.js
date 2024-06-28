@@ -97,7 +97,7 @@ pc_show_more.addEventListener("click",function(){
 
 
 
-console.log(event_ul.offsetHeight)-902
+// console.log(event_ul.offsetHeight)-902
 
 // make_eu_pc_default()
 // make_eu_mobile_default()
