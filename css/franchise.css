@@ -184,7 +184,7 @@ td.greendeco::before{
 }
 
 .month_div_station .train{
-    width: 400%;
+    width: 500%;
     display: flex;
     transition: all 0.7s ease 0s;
 }

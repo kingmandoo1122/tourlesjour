@@ -87,14 +87,14 @@ console.log(sub_faq_ul_dl[0].offsetHeight)
     next_month_btn.addEventListener("click",function(){
         count ++
         if (count > train_li.length-1){count = 0}
-        train.style.transform = `translateX(${count * -25}%)`
+        train.style.transform = `translateX(${count * -20}%)`
     })
 
     // 창업설명회 지난달 버튼
     last_month_btn.addEventListener("click",function(){
         count --
         if (count < 0){count = train_li.length-1}
-        train.style.transform = `translateX(${count * - 25}%)`
+        train.style.transform = `translateX(${count * - 20}%)`
     })
 
 

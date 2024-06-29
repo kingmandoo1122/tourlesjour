@@ -231,11 +231,11 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
 
 
     // 카드 리스트들의 a태그 이벤트 없애기
-    for(let i=0;i<card_list.length;i++){
-        card_list[i].addEventListener("click",function(e){
-            e.preventDefault()
-        })
-    }
+    // for(let i=0;i<card_list.length;i++){
+    //     card_list[i].addEventListener("click",function(e){
+    //         e.preventDefault()
+    //     })
+    // }
 
     // 
 

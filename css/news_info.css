@@ -72,6 +72,8 @@ p.notice{
 }
 .tableType1{
     text-align: center;
+    height: 1200px;
+    overflow: scroll;
 }
 .tableType1>table{
 

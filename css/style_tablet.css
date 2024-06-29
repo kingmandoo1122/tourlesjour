@@ -11,6 +11,29 @@ header#mobile{
 
 
 
+@keyframes sectionani {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+main>section:nth-of-type(2){
+    opacity: 0;
+    animation: sectionani 1s ease 0.1s forwards;
+}
+
+.brandstory_sec{
+    opacity: 1 !important;
+    animation: none !important;
+}
+
 
 
 

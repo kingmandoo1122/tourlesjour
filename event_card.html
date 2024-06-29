@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제품 안내 | 뚜레쥬르</title>
+    <title>제휴 안내 | 뚜레쥬르</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -12,14 +12,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_tablet.css">
     <link rel="stylesheet" href="./css/style_mobile.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/menu_tablet.css">
-    <link rel="stylesheet" href="./css/menu_mobile.css">
-    <script src="./js/menu_information.js"> </script>
+    <link rel="stylesheet" href="css/event_card.css">
+    <script src="./js/event_card.js"> </script>
     <link rel="shortcut icon" href="./img/icon_5.ico">
 </head>
 <body>
-    
     <header id="pc" >
         <section class="navigation_sec top">
             <span class="close_menu_btn hide"></span>
@@ -45,7 +42,7 @@
                                 <li><a href="franchise.html">가맹점 안내</li></a>
                             </ul>
                         </li>
-                        <li class="on"><a href="menu.html?tab=0">제품 안내</a>
+                        <li><a href="menu.html?tab=0">제품 안내</a>
                             <ul>
                                 <li><a href="menu.html?tab=0">빵</a></li>
                                 <li><a href="menu.html?tab=1">케이크</a></li>
@@ -54,7 +51,7 @@
                                 <li><a href="menu.html?tab=4">음료</a></li>
                             </ul>
                         </li>
-                        <li><a href="event.html">이벤트</a>
+                        <li class="on"><a href="event.html">이벤트</a>
                             <ul>
                                 <li><a href="event.html">진행중인 이벤트</a></li>
                                 <li><a href="event.html">이벤트 당첨자</a></li>
@@ -102,7 +99,7 @@
                                 <li><a href="franchise.html">가맹점 안내</li></a>
                             </ul>
                         </li>
-                        <li class="on"><a href="menu.html?tab=0">제품 안내</a>
+                        <li><a href="menu.html?tab=0">제품 안내</a>
                             <ul>
                                 <li><a href="menu.html?tab=0">빵</a></li>
                                 <li><a href="menu.html?tab=1">케이크</a></li>
@@ -111,7 +108,7 @@
                                 <li><a href="menu.html?tab=4">음료</a></li>
                             </ul>
                         </li>
-                        <li><a href="event.html">이벤트</a>
+                        <li class="on"><a href="event.html">이벤트</a>
                             <ul>
                                 <li><a href="event.html">진행중인 이벤트</a></li>
                                 <li><a href="event.html">이벤트 당첨자</a></li>
@@ -139,70 +136,21 @@
             <div class="inner_contents">
                 <p>
                     <a href="index.html">홈</a> &middot;
-                    <a href="menu.html?tab=0" class="point">제품 안내</a>
+                    <a href="event.html">이벤트</a> &middot;
+                    <a href="event_card.html" class="point">제휴 안내</a>
                 </p>
             </div>
         </section>
-        <section class="food_menu">
+        <section class="event_card">
             <div class="inner_contents">
-                <p>상세페이지에서 제품별 영양 / 알레르기 정보를 확인하실 수 있습니다.</p>
-                <ul class="food_menu_ul">
-                    <li>
-                        <a href="#" data-category="식빵" data-num="0">빵</a>
-                         <ul class="bread_ul"> 
-                            <li><a href="#" data-category="식빵" data-num="0">전체</a></li>
-                            <li><a href="#" data-category="식빵" data-num="0">식빵</a></li>
-                            <li><a href="#" data-category="건강빵" data-num="0">건강빵</a></li>
-                            <li><a href="#" data-category="간식빵" data-num="0">간식빵</a></li>
-                            <li><a href="#" data-num="0" data-category="파이패스트리">파이/<br>패스트리</a></li>
-                            <li><a href="#" data-num="0" data-category="도넛고로케">도넛/<br>고로케</a></li>
-                        </ul>
-                     </li>
-                    <li><a data-category="생크림케이크" data-num="1" href="#">케이크</a>
-                    <ul class="cake_ul">
-                        <li><a data-category="생크림케이크" href="#" data-num="1">전체</a></li>
-                        <li><a data-category="생크림케이크" href="#" data-num="1">생크림<br>케이크</a></li>
-                        <li><a data-category="스페셜케이크" href="#" data-num="1">스페셜<br>케이크</a></li>
-                        <li><a data-category="무스케이크" href="#" data-num="1">무스<br>케이크</a></li>
-                        <li><a data-category="캐릭터케이크" href="#" data-num="1">캐릭터<br>케이크</a></li>
-                        <li><a data-category="조각케이크" href="#" data-num="1">조각<br>케이크</a></li>
-                        <li><a data-category="대형케이크" href="#" data-num="1">대형<br>케이크</a></li>
-                    </ul></li>
-                    <li><a data-num="2" href="#" data-category="샌드위치">델리</a>
-                    <ul class="deli_ul">
-                        <li><a data-num="2" data-category="샌드위치" href="#">전체</a></li>
-                        <li><a data-num="2" data-category="샌드위치" href="#">샌드위치</a></li>
-                        <li><a data-num="2" data-category="샐러드" href="#">샐러드</a></li>
-                        <li><a data-num="2" data-category="간편식"  href="#">간편식</a></li>
-                    </ul></li>
-                    <li><a data-num="3" data-category="구움양과" href="#">디저트&<br>스낵</a>
-                    <ul class="dessert_ul">
-                        <li><a data-num="3" data-category="구움양과" href="#">전체</a></li>
-                        <li><a data-num="3" data-category="구움양과" href="#">구움양과</a></li>
-                        <li><a data-num="3" data-category="마카롱" href="#">마카롱</a></li>
-                        <li><a data-num="3" data-category="아이스크림" href="#">아이스크림</a></li>
-                        <li><a data-num="3" data-category="초콜릿캔디" href="#">초콜릿/<br>캔디</a></li>
-                        <li><a data-num="3" data-category="잼스프레드" href="#">잼/<br>스프레드</a></li>
-                    </ul></li>
-                    <li><a data-num="4" data-category="커피" href="#">음료</a>
-                    <ul class="drink_ul">
-                        <li><a data-num="4" data-category="커피" href="#">전체</a></li>
-                        <li><a data-num="4" data-category="커피" href="#">커피</a></li>
-                        <li><a data-num="4" data-category="블랜디드" href="#">블랜디드</a></li>
-                        <li><a data-num="4" data-category="과일주스에이드" href="#">과일주스/<br>에이드</a></li>
-                        <li><a data-num="4" data-category="티라떼" href="#">티/<br>라떼</a></li>
-                        <li><a data-num="4" data-category="우유병음료" href="#">우유/<br>병음료</a></li>
-                    </ul></li>
+                <ul>
+                    <li><a href="event_card_info.html"><img src="./img/card_1.png" alt="t멤버쉽카드"></a>
+                    <p>T 멤버쉽 카드</p></li>
                 </ul>
-                <div class="menu_wrap">
-                
-                    <div class="pro_view">
-                        <ul class="pro_list"></ul>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
+
     <footer>
         <section class="searchstore_sec">
             <div class="inner_contents">
@@ -257,51 +205,7 @@
             </div>
         </section>
     </footer>
+    <script src="./js/event_card_list.js"></script>
     <script src="./js/common_mobile.js"></script>
-    <script src="./js/menu.js"></script>
-    <script>
-        
-
-                
-        let bread_ul_li = document.querySelectorAll(".bread_ul>li")
-        let cake_ul_li = document.querySelectorAll(".cake_ul>li")
-        let deli_ul_li= document.querySelectorAll(".deli_ul>li")
-        let dessert_ul_li= document.querySelectorAll(".dessert_ul>li")
-        let drink_ul_li= document.querySelectorAll(".drink_ul>li")
-        let menu_li = [bread_ul_li,cake_ul_li,deli_ul_li,dessert_ul_li,drink_ul_li]
-
-        function show1depth(tabNumber,depth1cate){
-            for(let i=0 ; i<product_array.length ; i++){
-                    // let category_name = depth1cate
-                    let result_array = []
-                    product_array[tabNumber].map(function(item){
-                        // if(item.pcate == category_name){
-                            result_array.push(item)
-                        // }
-                    })
-                    document.querySelector(".pro_list").innerHTML = showList(result_array,tabNumber)
-            }    
-        }
-
-        let food_menu_ul_li = document.querySelectorAll(".food_menu_ul>li")
-        function showtabmenu(tabnum){
-            food_menu_ul_li[tabnum].classList.add("on")
-            menu_li[tabnum][0].classList.add("on")
-        }
-
-        function getQueryParam(param){
-            let urlparams = new URLSearchParams(window.location.search);
-            return urlparams.get(param)
-        }
-        
-        let tab = 0
-        document.addEventListener("DOMContentLoaded",function(){
-            tab = getQueryParam('tab')
-            console.log(tab)
-            show1depth(getQueryParam('tab'))
-            showtabmenu(getQueryParam('tab'))
-        })
-        console.log(tab)
-    </script>
 </body>
 </html>
