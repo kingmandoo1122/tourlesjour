@@ -1,5 +1,5 @@
 function showList(array,tabnumber){
-    console.log(array)
+    // console.log(array)
     let result =""
     for(let i=0; i<array.length;i++){
         
@@ -41,7 +41,7 @@ let food_menu_ul_li2_a = document.querySelectorAll(".food_menu_ul>li>ul>li>a") /
 
 // let food_menu_ul_lists = [food_menu_ul_li_1,food_menu_ul_li_2,food_menu_ul_li_3,food_menu_ul_li_4,food_menu_ul_li_5]
 
-console.log(food_menu_ul_li2_a)
+// console.log(food_menu_ul_li2_a)
     
 let bread_ul_li = document.querySelectorAll(".bread_ul>li")
 let cake_ul_li = document.querySelectorAll(".cake_ul>li")
@@ -141,7 +141,7 @@ for(let i=0 ; i<product_array.length ; i++){
         e.preventDefault()
         let category_name = this.getAttribute("data-category")
         let tabnum = this.getAttribute("data-num")
-        console.log(tabnum)
+        // console.log(tabnum)
         let result_array = []
 
         product_array[tabnum].map(function(item){
@@ -153,7 +153,7 @@ for(let i=0 ; i<product_array.length ; i++){
 }
 
 
-console.log(food_menu_ul_li2_a)
+// console.log(food_menu_ul_li2_a)
 
 
 // 2뎁스메뉴
@@ -169,7 +169,7 @@ for(let i=0 ; i<food_menu_ul_li2_a.length ; i++){
                 result_array.push(item)
             }
         })
-        console.log(result_array)
+        // console.log(result_array)
         document.querySelector(".pro_list").innerHTML = showList(result_array,depth1num)
 
     })
@@ -198,7 +198,7 @@ for(let i=0;i<a_list.length;i++){
             result_array.push(item)
         })
         document.querySelector(".pro_list").innerHTML = showList(result_array,depth1num)
-        console.log(depth1num)
+        // console.log(depth1num)
         // document.querySelector(".pro_list").innerHTML = showList(result_array)
     
     
@@ -240,10 +240,6 @@ window.addEventListener("wheel",function(e){
 
     }
 })
-
-
-
-
 
 
 

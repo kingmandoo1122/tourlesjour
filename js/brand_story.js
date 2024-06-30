@@ -78,25 +78,6 @@ for(let i=0; i<global_tab.length;i++){
         }
     })
     
-    window.addEventListener("wheel",function(e){
-        let aa = e.deltaY 
-        if (aa<0){
-            num++
-    
-            if(num<2){
-                mobile_navigation_sec.classList.remove("hide")
-                num=0
-            }
-        }
-        if (aa>0){
-            numb ++
-            if(numb>2){
-                mobile_navigation_sec.classList.add("hide")
-                numb=0
-            }
-    
-        }
-    })
     
     
 
@@ -174,7 +155,7 @@ window.addEventListener("scroll",function(){
 
 
 
-    console.log(gettop(dot_line_2n[0]))
+    // console.log(gettop(dot_line_2n[0]))
     // console.log(scroll)
     // console.log(ani_length)
 

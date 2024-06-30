@@ -1,7 +1,7 @@
 window.onload = function(){
 
 
-    console.log("ggg")
+    // console.log("ggg")
 
    
 // 공통 변수들
@@ -64,7 +64,7 @@ open_submit_date.addEventListener("click",function(e){
 
 sub_faq_ul_li[0].style.height = `${sub_faq_ul_dl[0].offsetHeight}px`
 
-console.log(sub_faq_ul_dl[0].offsetHeight)
+// console.log(sub_faq_ul_dl[0].offsetHeight)
 
     // 가맹 FAQ 리스트 탭메뉴
 
@@ -133,27 +133,6 @@ console.log(sub_faq_ul_dl[0].offsetHeight)
         }
     })
     
-    window.addEventListener("wheel",function(e){
-        let aa = e.deltaY 
-        if (aa<0){
-            num++
-    
-            if(num<2){
-                mobile_navigation_sec.classList.remove("hide")
-                num=0
-            }
-        }
-        if (aa>0){
-            numb ++
-            if(numb>2){
-                mobile_navigation_sec.classList.add("hide")
-                numb=0
-            }
-    
-        }
-    })
-    
-    
 
 let roundnum =0
 
@@ -199,7 +178,7 @@ let roundnum =0
         let ani_iper = Math.round((ani_num - ani_idx)*100)/100 // 0~100
         // console.log(ani_num)
         let sub_down_to_up_event = document.querySelectorAll(".sub_down_to_up_event")
-        console.log(ani_iper)
+        // console.log(ani_iper)
 
 
 

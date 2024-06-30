@@ -22,7 +22,7 @@ window.onload =function(){
             dl_height_arr.push(sub_faq_ul_dl[i].offsetHeight)
         }
 
-        console.log(sub_faq_ul_dl[0].offsetHeight)
+        // console.log(sub_faq_ul_dl[0].offsetHeight)
 
         for(let i=0; i<sub_faq_ul_dt.length;i++){
             sub_faq_ul_dt[i].addEventListener("click",function(){

@@ -15,20 +15,36 @@ window.onload = function(){
     let card_ul2 = document.querySelector(".card_ul2")
 
 
+    function quickcls(){
+        let a_cls_btn = document.querySelector("a.cls_btn")
+        a_cls_btn.addEventListener("click",function(){
+            enter_popup.style.opacity = `0`
+                enter_popup.style.pointerEvents = `none`
+                enter_popup_modal.style.opacity = `0`
+                enter_popup_modal.style.pointerEvents = `none`
+
+                dontsee1hour()
+        })
+    
+    }
+    
 
 
     let content = [
         "현재 사이트는 실제 사이트가 아니며",
         "TOUS les JOURS 사이트를 리디자인한 사이트입니다.",
-        "메인, 브랜드 스토리, 브랜드스토리 - 뉴스&공지사항,",
+        "메인, 브랜드 스토리, 뉴스&공지사항, 제휴 안내",
         "가맹 안내, 제품 안내, 이벤트 페이지를 제작하였습니다.",
         "768px - 1023px 태블릿 버전과",
         "767 이하의 모바일 버전의 반응형 페이지도 확인해 보실 수 있습니다."
 
     ]
 
+
+
+    
     for(let i=0;i<content.length;i++){
-        console.log(content[i].length)
+        // console.log(content[i].length)
     }
 
 
@@ -121,6 +137,8 @@ let current_count = 0
 let enter_popup = document.querySelector(".enter_popup")
 let enter_popup_modal = document.querySelector(".enter_popup_modal")
 
+
+quickcls()
 
     function startcountdown(){
         timeinterval = setInterval(function(){
@@ -242,7 +260,7 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
     for(let i=0;i<card_ul1_img.length;i++){
         card_ul1_img[i].addEventListener("mouseenter",function(){
                 card_ul1.style.zIndex = 10
-                console.log("ggg")
+                // console.log("ggg")
         })    
         }
     
@@ -368,26 +386,6 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
         }
     })
 
-    window.addEventListener("wheel",function(e){
-        let aa = e.deltaY 
-        if (aa<0){
-            num++
-
-            if(num<2){
-                mobile_navigation_sec.classList.remove("hide")
-                num=0
-            }
-        }
-        if (aa>0){
-            numb ++
-            if(numb>2){
-                mobile_navigation_sec.classList.add("hide")
-                numb=0
-            }
-
-        }
-    })
-
 
 
     window.addEventListener("scroll",function(){
@@ -421,7 +419,7 @@ let enter_popup_modal = document.querySelector(".enter_popup_modal")
 
         
         if (matchMedia("(min-width: 768px) and (max-width:1023px)").matches){
-            console.log(scroll)
+            // console.log(scroll)
             // 상단네비게이션
             if(scroll > 849){
                 navigation_sec.classList.remove("top")

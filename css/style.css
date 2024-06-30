@@ -34,6 +34,16 @@ header#mobile{
 
 
 
+a.cls_btn{
+    position: absolute;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu_close.svg) no-repeat 50% 50% / contain;
+        top: 210px;
+        right: 440px;
+}
+
 
 .btn{
     font-size:20px;

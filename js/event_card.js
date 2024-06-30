@@ -28,26 +28,7 @@ window.onload = function(){
         }
     })
     
-    window.addEventListener("wheel",function(e){
-        let aa = e.deltaY 
-        if (aa<0){
-            num++
-    
-            if(num<2){
-                mobile_navigation_sec.classList.remove("hide")
-                num=0
-            }
-        }
-        if (aa>0){
-            numb ++
-            if(numb>2){
-                mobile_navigation_sec.classList.add("hide")
-                numb=0
-            }
-    
-        }
-    })
-    
+
     
 
 
