@@ -29,20 +29,7 @@
     
     /* 내용 */
     
-    .event_info{
-        animation : eventinfoanimation 1s ease 0.1s forwards
-    }
-    @keyframes eventinfoanimation {
-        0%{
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-    }
+   
     
     .event_info .inner_contents{
     padding-top:50px;

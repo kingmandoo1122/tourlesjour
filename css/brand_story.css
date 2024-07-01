@@ -27,10 +27,7 @@
 
 
 
-.sub_brand_story{
-    animation: sub_brand_story_move 1s ease 0.1s forwards;
-    opacity: 0;
-}
+
 
 .sub_brand_story .inner_contents{
     padding-top:150px;
@@ -72,18 +69,6 @@
 }
 
 
-
-@keyframes sub_brand_story_move {
-    0%{opacity: 0;
-        transform: translateY(50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    
-}
 
 
 

@@ -40,22 +40,6 @@ body.scroll{
     padding-bottom: 150px;
 }
 
-.sub_date{
-    opacity: 0;
-    animation: sub_date_move 1s ease 0.1s forwards;
-}
-
-@keyframes sub_date_move {
-    0%{opacity: 0;
-        transform: translateY(50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    
-}
 
 
 

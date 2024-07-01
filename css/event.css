@@ -30,25 +30,6 @@
 
 /* 이벤트 섹션 */
 
-@keyframes sub_event_move {
-    0%{opacity: 0;
-        transform: translateY(50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    
-}
-
-
-.event{
-    opacity: 0;
-    animation : sub_event_move 1s ease 0.1s forwards;
-}
-
-
 
 
 

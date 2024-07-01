@@ -33,20 +33,8 @@
         
         /* 제품안내 메뉴 */
         
-        .food_menu{
-            animation: food_menu_animation 1s ease 0.1s forwards;
-        }
-        .food_menu{
-            opacity: 0;
-        }
-        
-        @keyframes food_menu_animation{
-            0%{opacity: 0;
-            transform: translateY(50px);}
-            100%{opacity: 1;
-            transform: translateY(0);}
-            
-        }
+       
+
         
         .food_menu .inner_contents>p{
         color: rgba(0, 0, 0, 0.8);
