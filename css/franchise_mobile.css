@@ -318,10 +318,6 @@ td.greendeco::before{
 .lists p {
     font-size: 18px;
 }
-.lists br{
-}
-
-
 
 
 
@@ -774,8 +770,6 @@ input[id="address"]{
     border-bottom: 1px solid rgba(0, 0, 0, 0.8)
 }
 
-select[id="place_parent"]{
-}
 
 .submit_franchise .three select{
     width: 100%;
