@@ -231,8 +231,9 @@
     document.addEventListener("DOMContentLoaded",function(){
         let pid = getQueryParam("pid")
         let tab = getQueryParam("tab")
+        let cname = ""
 
-        let cname = tab==0?cname="빵":tab==1?cname="케이크":tab==2?"델리":tab==3?"디저트 & 스낵":tab==4?"음료":"지정안됨"
+        cname = tab==0?cname="빵":tab==1?cname="케이크":tab==2?"델리":tab==3?"디저트 & 스낵":tab==4?"음료":"지정안됨"
 
         // console.log(pid,tab)
         // console.log(`너는${cname}`)
