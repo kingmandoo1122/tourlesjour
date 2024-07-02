@@ -17,7 +17,8 @@ window.onload = function(){
 
     function quickcls(){
         let a_cls_btn = document.querySelector("a.cls_btn")
-        a_cls_btn.addEventListener("click",function(){
+        a_cls_btn.addEventListener("click",function(e){
+            e.preventDefault()
             enter_popup.style.opacity = `0`
                 enter_popup.style.pointerEvents = `none`
                 enter_popup_modal.style.opacity = `0`
