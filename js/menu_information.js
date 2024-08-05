@@ -115,9 +115,6 @@ bread_array.map(function(item){
 })
 
 
-// document.querySelector(".pro_list").innerHTML = showList(first_array)
-
-
 
 
 depth2select(bread_ul_li)
